@@ -1,0 +1,40 @@
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+
+#banner img{
+	max-width: 100%;
+}
+
+#main-menu{
+	margin-top: 10px;
+	text-align: center;
+}
+#main-menu a{
+	margin-right: 20px;
+}
+
+#main-content{
+	margin-top: 10px;
+}
+
+a:link{
+	color:grey;
+}
+
+a:visited{
+	color:black;
+}
+
+a:hover{
+	color:blue;
+}
+
+a:active{
+	color:red;
+}
+
+a.active{
+	font-weight: bold;
+}

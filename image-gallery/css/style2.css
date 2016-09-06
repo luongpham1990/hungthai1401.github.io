@@ -1,0 +1,14 @@
+/*Pseudo Element: thuộc tính content đi kèm có giá trị là 1 
+chuỗi String ảnh hưởng đến content của element*/
+/*Cấu trúc:
+selector::pseudo-element {
+    property:value;
+}
+*/
+b.money::before{
+	content: "Học phí ";
+}
+
+b.money::after{
+	content:" VND";
+}

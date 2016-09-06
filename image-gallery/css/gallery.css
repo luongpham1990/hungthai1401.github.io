@@ -1,0 +1,18 @@
+*{
+	box-sizing: border-box;
+}
+
+.item{
+	width: 30%;
+	float: left;
+	margin: 15px 15px;
+}
+
+.item img{
+	max-width: 300px;
+	height: auto;
+}
+
+.item img:hover{
+	border-radius: 20px;
+}

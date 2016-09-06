@@ -1,0 +1,20 @@
+#detail-product{
+	width: 1000px;
+}
+
+#img-detail{
+	max-width: 500px;
+	max-height: 500px;
+	display: block;
+	margin: auto;
+}
+
+#img-detail:hover{
+	border: 0.5px solid white;
+}
+
+#detail{
+	width: 450px;
+	height: 450px;
+	margin: 5px auto;
+}

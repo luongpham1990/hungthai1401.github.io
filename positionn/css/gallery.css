@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+
+.main {
+	margin-top: 50px;
+}
+
+#banner img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-bottom: 5px;
+}
+
+#main-content{
+	width: 100%;
+	position: relative;
+	padding-left: 80px;
+}
+
+#main-menu{
+	min-width: 80px;
+	position: absolute;
+}
+
+.item{
+	width: 30%;
+	float: left;
+	margin: 0px 15px 15px;
+}
+
+
+.item img{
+	max-width: 300px;
+	height: auto;
+}
+
+.item img:hover{
+	border-radius: 20px;
+}
+
+#top{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}

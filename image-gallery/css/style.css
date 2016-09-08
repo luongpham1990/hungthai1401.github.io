@@ -11,8 +11,26 @@ body{
 	margin: auto;
 }
 
-#banner img{
+#banner{
 	max-width: 100%;
+	position: relative;
+}
+
+#banner img{
+	width: 100%;
+}
+
+#avatar{
+	width: 10%;
+	position: absolute;
+	top: 150px;
+	left: 225px;
+	padding: 4px;
+}
+
+#avatar img{
+	width: 100%;
+	border-radius: 50%;
 }
 
 #nav{

@@ -1,0 +1,73 @@
+/*<----------Content----------*/
+*{
+	box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+.nav-container .container ul{
+	list-style: none;
+}
+
+.container .gallery-menu-container{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.container .gallery-menu-container .gallery-menu{
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(115, 132, 142, 0.2);
+	padding: 5px 25px 11px;
+}
+
+.container .gallery-menu li{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 22px;
+}
+
+.container .gallery-menu li a{
+	color: #000 !important;
+}
+
+.container .gallery-menu li.active a{
+	color: #cf5114 !important;
+}
+
+.container .gallery-product .item{
+	width: 32%;
+	float: left;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	text-align: center;
+}
+
+.item .item-image{
+	margin-bottom: 16px;
+}
+
+.item .item-line{
+	padding-bottom: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.item .item-price{
+	margin-bottom: 12px;
+}
+
+.item .item-price p{
+	font-size: 18px;
+    text-transform: uppercase;
+    color: #e1560e !important;
+    font-weight: bold;
+}
+
+.item .item-price p::after{
+	content: " VNĐ";
+}

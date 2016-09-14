@@ -73,7 +73,7 @@ a{
 .footer{
 	font-weight: bold;
 	text-align: right;
-	animation: fadein 5s ease-in-out infinite;
+	animation: fadein 5s ease-in-out infinite alternate;
 	animation-delay: 3s;
 }
 

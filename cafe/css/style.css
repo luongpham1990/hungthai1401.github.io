@@ -32,11 +32,11 @@ h2{
 }
 
 /* <-----------Header----------> */
-
 #header{
 	position: relative;
 }
 
+/*<-----------Banner---------->*/
 #header .banner-container{
 	background: #23292c;
     overflow: hidden;
@@ -51,6 +51,9 @@ h2{
 	background-size: cover;/*làm ảnh background full màn hình*/
 }
 
+/*<-----------/Banner---------->*/
+
+/*<-----------Navigation---------->*/
 .nav-container{
 	position: absolute;
 	bottom: 0px;
@@ -131,9 +134,10 @@ h2{
 #nav-main-menu li .sub-menu li a:hover{
 	color: #fff;
 }
+/*<-----------/Navigation---------->*/
+/*<-----------/Header---------->*/
 
-/* <-----------Content----------> */
-
+/*<-----------Content---------->*/
 .index-content{
 	width: 100%;
 	margin-bottom: 40px;
@@ -324,8 +328,9 @@ h2{
 	color: #8b0304;
 }
 
-/*<----------Footer---------->*/
+/*<-----------/Content---------->*/
 
+/*<----------Footer---------->*/
 #footer{
 	width: 100%;
     padding-top: 10px;
@@ -460,12 +465,14 @@ h2{
 	display: block;
 	margin-top: 5px;
 }
+/*<-----------/Footer---------->*/
 
 /*<----------About---------->*/
 #content .container p{
 	text-align: justify;
 	line-height: 1.875em;
 }
+/*<-----------/About---------->*/
 
 /*<----------Menu---------->*/
 .container .gallery-menu-container{
@@ -528,9 +535,9 @@ h2{
 .item .item-price p::after{
 	content: " VNĐ";
 }
+/*<-----------/Menu---------->*/
 
 /*<----------Gallery---------->*/
-
 .album{
 	width: 100%;
 	margin-top: 30px;
@@ -569,6 +576,7 @@ h2{
 	-o-transition: opacity .4s linear;
 	transition: opacity .4s linear;
 }
+/*<-----------/Gallery---------->*/
 
 /*<----------Blog---------->*/
 .blog-container{
@@ -638,9 +646,9 @@ h2{
 	display: block;
 	padding: 5px 5px;
 }
+/*<-----------/Blog---------->*/
 
 /*<----------Detail---------->*/
-
 #index-content > *{
 	padding: 0 7.5px;
 }
@@ -716,3 +724,4 @@ h2{
 	float: left;
 	margin-right: 12px;
 }
+/*<-----------/Detail---------->*/

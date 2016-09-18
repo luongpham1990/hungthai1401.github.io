@@ -97,7 +97,7 @@ h2{
 .sub-menu{
 	display: none;
 	position: absolute;
-	top: 50px;
+	top: 100%;
     left: 0px;
 }
 
@@ -107,7 +107,7 @@ h2{
 
 #nav-main-menu li:hover .sub-menu{
 	display: block;
-	top: 50px;
+	top: 100%;
 	width: 180px;
     z-index: 9999999;
     background: #000;

@@ -1,0 +1,131 @@
+* {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+body {
+	height: 100%;
+	background-color: #B8BDBF;
+	background-size: cover;
+}
+
+#calculator {
+	width: 315px;
+	height: auto;
+	margin: 50px auto;
+	padding: 20px 20px 9px;
+	background-color: #9dd2ea;
+	border-radius: 3px;
+	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top, .keys {
+	overflow: hidden;
+}
+
+.top input.clear, .keys input {
+	float: left;
+	position: relative;
+	top: 0;
+	width: 56px;
+	height: 56px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 0 7px 11px 0;
+	color: #888;
+	line-height: 36px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.top input.clear {
+	float: left;
+}
+
+.top #screen {
+	width: 225px;
+	height: 60px;
+	float: left;
+	padding: 0 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	font-size: 17px;
+	line-height: 40px;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px; 
+}
+
+.keys input.operator {
+	background-color: #FFF0F5;
+}
+
+.keys input.eval {
+	background-color: #f1ff92;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+
+.top input.clear {
+	background: #ff9fa8;
+	box-shadow: 0px 4px #ff7c87;
+	color: white;
+}
+
+/* Some hover effects */
+.keys input:hover {
+	background: #9c89f6;
+	box-shadow: 0px 4px #6b54d3;
+	color: white;
+}
+
+.keys input.eval:hover {
+	background: #abb850;
+	box-shadow: 0px 4px #717a33;
+	color: #ffffff;
+}
+
+.top input.clear:hover {
+	background: #f68991;
+	box-shadow: 0px 4px #d3545d;
+	color: white;
+}
+
+/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
+.keys input:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keys input.eval:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
+
+.top input.clear:active {
+	top: 4px;
+	box-shadow: 0px 0px #d3545d;
+}
+
+#changetheme{
+	width: 315px;
+	height: auto;
+	margin: 30px auto;
+}
+
+#changetheme input{
+	width: 150px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 0 7px 11px 0;
+	color: #052A36;
+	line-height: 36px;
+	text-align: center;
+	cursor: pointer;
+}

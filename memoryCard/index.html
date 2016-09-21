@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Card</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<audio id="bg-music">
+    	<source src="audio/bg.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="welcome-sound">
+    	<source src="audio/welcome.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="incorrect-sound">
+    	<source src="audio/incorrect.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="correct-sound">
+    	<source src="audio/correct.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="defeat-sound">
+    	<source src="audio/defeat.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="rampage-sound">
+    	<source src="audio/rampage.mp3" type="audio/mpeg">
+	</audio>
+
+	<div id="wrap">
+		<div class="top">
+			<h1>Score: 0</h1>
+			<progress id="remain" max="60" value="60"></progress>
+		</div>
+		<div class="container">
+		</div>	
+	</div>
+
+	<div class="modal begin">
+		<div class="dialog">
+			<h1>Memory Card</h1>
+			<h2>Please choose game mode</h2>
+			<button id="btn-start easy" onclick="startEasy()">Easy</button>
+			<button id="btn-start normal" onclick="startNormal()">Normal</button>
+			<button id="btn-start hard" onclick="startHard()">Hard</button>
+		</div>
+	</div>
+
+	<div class="modal win">
+		<div class="dialog">
+			<h1>You are win</h1>
+			<button id="btn-reset" onclick="begin()">Play again</button>
+		</div>
+	</div>
+
+	<div class="modal lose">
+		<div class="dialog">
+			<h1>Time over</h1>
+			<button class="btn-reset" onclick="begin()">Play again</button>
+		</div>
+	</div>
+
+	<div class="overlay">
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -44,7 +44,7 @@ function closeModal() {
 }
 
 function loadMode(numberCard) {
-	$('.timer').css('display', 'none');
+	$('.top').css('display', 'none');
 	var randomImg = [];
 	for (var i = 0; i < numberCard; i++) {
 		randomImg[i] = arrImg[i];
@@ -58,7 +58,7 @@ function loadMode(numberCard) {
 }
 
 function startGame(numberCard) {
-	$('.timer').css('display', 'block');
+	$('.top').css('display', 'block');
 	playSound('welcome');
 	var currentCard = null;
 	isPlaying = true;
@@ -146,6 +146,7 @@ function begin() {
 }
 
 $(document).ready(function() {
+	$('.top').css('display', 'none');
 	openModal('begin');
 	playMusic();
 });

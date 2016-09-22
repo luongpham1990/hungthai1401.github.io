@@ -1,3 +1,23 @@
+@font-face {
+	font-family: "MavenPro-Regular";
+	src: url('../fonts/mavenpro-regular-webfont.eot');
+    src: url('../fonts/mavenpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mavenpro-regular-webfont.woff') format('woff'),
+         url('../fonts/mavenpro-regular-webfont.svg#maven_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MavenPro-Bold';
+	src: url('../fonts/mavenpro-bold-webfont.eot');
+	src: url('../fonts/mavenpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/mavenpro-bold-webfont.woff') format('woff'),
+	url('../fonts/mavenpro-bold-webfont.svg#maven_probold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -18,11 +38,11 @@ img{
 
 body{
 	height: 100%;
-	font-family: 'Myriad Pro Regular';
+	font-family: 'MavenPro-Regular';
 }
 
 h2{
-	font-family: 'Myriad Pro Bold';
+	font-family: 'MavenPro-Bold';
 	font-size: 40px;
 }
 
@@ -39,8 +59,8 @@ h2{
 /*<-----------Banner---------->*/
 #header .banner-container{
 	background: #23292c;
-    overflow: hidden;
-    height: 500px;
+	overflow: hidden;
+	height: 500px;
 }
 
 .banner-container .banner{
@@ -98,7 +118,7 @@ h2{
 	display: none;
 	position: absolute;
 	top: 100%;
-    left: 0px;
+	left: 0px;
 }
 
 .sub-menu li a{
@@ -109,10 +129,10 @@ h2{
 	display: block;
 	top: 100%;
 	width: 180px;
-    z-index: 9999999;
-    background: #000;
-    padding: 15px 10px 20px;
-    text-align: left;
+	z-index: 9999999;
+	background: #000;
+	padding: 15px 10px 20px;
+	text-align: left;
 }
 
 #nav-main-menu li .sub-menu li{
@@ -150,7 +170,7 @@ h2{
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
-    padding-right: 15px;
+	padding-right: 15px;
 }
 
 .container h2{
@@ -169,10 +189,10 @@ h2{
 
 .view-more{
 	margin: 15px auto;
-    text-align: center;
-    border-bottom: 2px solid #3c3b39;
-    width: 50%;
-    height: 12px;
+	text-align: center;
+	border-bottom: 2px solid #3c3b39;
+	width: 50%;
+	height: 12px;
 }
 
 .view-more a{
@@ -232,19 +252,19 @@ h2{
 	overflow: hidden;
 	text-align: center;
 	background: rgba(35, 31, 44, 0.7);
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;  
+	color: white;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;  
 }
 
 .overlay-contain .overlay .overlay-detail{
@@ -272,43 +292,43 @@ h2{
 	position: absolute;
 	top: 0;
 	left: 0;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 13px;
-    color: #fff !important;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateY(50%) translateX(0);
-    -moz-transform: translateY(50%) translateX(0);
-    -ms-transform: translateY(50%) translateX(0);
-    -o-transform: translateY(50%) translateX(0);
-    transform: translateY(50%) translateX(0);
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;  
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 13px;
+	color: #fff !important;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(50%) translateX(0);
+	-moz-transform: translateY(50%) translateX(0);
+	-ms-transform: translateY(50%) translateX(0);
+	-o-transform: translateY(50%) translateX(0);
+	transform: translateY(50%) translateX(0);
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;  
 }
 
 .overlay-contain:hover .overlay{
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1) translateX(0);
-    -moz-transform: scale(1) translateX(0);
-    transform: scale(1) translateX(0);
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1) translateX(0);
+	-moz-transform: scale(1) translateX(0);
+	transform: scale(1) translateX(0);
 }
 
 .overlay-contain:hover .overlay .overlay-details h3{
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0) translateX(0);
-    -moz-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0);
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0) translateX(0);
+	-moz-transform: translateY(0) translateX(0);
+	transform: translateY(0) translateX(0);
 }
 .overlay-contain .overlay .overlay-details h3{
-    -webkit-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+	-webkit-transition-delay: 0.1s;
+	-moz-transition-delay: 0.1s;
+	transition-delay: 0.1s;
 }
 
 .btn-to-top{
@@ -333,11 +353,11 @@ h2{
 /*<----------Footer---------->*/
 #footer{
 	width: 100%;
-    padding-top: 10px;
-    padding-bottom: 35px;
-    background-color: #23292c;
-    color: #73848e;
-    overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 35px;
+	background-color: #23292c;
+	color: #73848e;
+	overflow: hidden;
 }
 
 .container-bottom-25{
@@ -362,7 +382,7 @@ h2{
 }
 
 #footer .social-container ul li{
-    display: inline-block;
+	display: inline-block;
 }
 
 #footer .address-container img{
@@ -373,10 +393,10 @@ h2{
 
 #footer .address-container p{
 	font-size: 14px;
-    line-height: 20px;
-    display: block;
-    overflow: hidden;
-    margin-bottom: 20px;
+	line-height: 20px;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 #footer .address-container p span{
@@ -390,32 +410,32 @@ h2{
 .about-quote{
 	width: 60%;
 	border: 1px dashed #6c3c3c;
-    padding: 25px 30px 230px 60px;
-    position: relative;
+	padding: 25px 30px 230px 60px;
+	position: relative;
 }
 
 .quote{
 	position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    padding: 25px 30px 70px 60px;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 24px;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 25px 30px 70px 60px;
+	text-align: justify;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .quote::before{
 	content: "“";
 	position: absolute;
 	top: 15px;
-    left: 10px;
+	left: 10px;
 	display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 75px;
-    font-size: 80px;
+	width: 30px;
+	height: 30px;
+	line-height: 75px;
+	font-size: 80px;
 }
 
 .quote::after{
@@ -427,12 +447,12 @@ h2{
 	transform: translateY(-180deg);
 	position: absolute;
 	bottom: 20px;
-    right: 5px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 75px;
-    font-size: 80px;
+	right: 5px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 75px;
+	font-size: 80px;
 }
 
 .container-bottom-50{
@@ -457,7 +477,7 @@ h2{
 }
 
 .user-info > .user-name{
-	font-family: 'Myriad Pro Regular';
+	font-family: 'MavenPro-Regular';
 	font-weight: bold;
 }
 
@@ -517,8 +537,8 @@ h2{
 
 .item .item-line{
 	padding-bottom: 18px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #000;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #000;
 }
 
 .item .item-price{
@@ -527,9 +547,9 @@ h2{
 
 .item .item-price p{
 	font-size: 18px;
-    text-transform: uppercase;
-    color: #e1560e !important;
-    font-weight: bold;
+	text-transform: uppercase;
+	color: #e1560e !important;
+	font-weight: bold;
 }
 
 .item .item-price p::after{
@@ -685,11 +705,11 @@ h2{
 }
 
 .price{
-	font-family: 'Myriad Pro Regular', sans-serif;
-    font-size: 24px;
-    color: #e1560e;
-    font-style: italic;
-    margin: 0 0 10px -10px;
+	font-family: 'MavenPro-Regular', sans-serif;
+	font-size: 24px;
+	color: #e1560e;
+	font-style: italic;
+	margin: 0 0 10px -10px;
 }
 
 .price::after{

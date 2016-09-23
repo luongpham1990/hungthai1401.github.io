@@ -18,6 +18,15 @@ for (var i = 0; i < keys.length; i++) {
 	}, false);
 }
 
+document.querySelector(".zero").addEventListener("click", function() {
+	var zero = this.value;
+	if (screen.innerHTML === "") {
+		screen.innerHTML = screen.innerHTML.concat("");
+	} else {
+		output = screen.innerHTML += zero;
+	}
+}, false);
+
 for (var i = 0; i < operator.length; i++) {
 	operator[i].addEventListener("click", function() {
 		operators = this.value;
@@ -31,7 +40,7 @@ for (var i = 0; i < operator.length; i++) {
 
 document.querySelector(".period").addEventListener("click", function() {
 	if (screen.innerHTML === "") {
-		screen.innerHTML = screen.innerHTML.concat("");
+		screen.innerHTML = screen.innerHTML.concat("0.");
 	} else if(screen.innerHTML === output) {
 		screen.innerHTML = screen.innerHTML.concat(".");
 	}
@@ -48,8 +57,8 @@ document.querySelector(".eval").addEventListener("click", function() {
 document.querySelector(".can").addEventListener("click", function() {
 	if (screen.innerHTML === "") {
 		screen.innerHTML = screen.innerHTML.concat("");
-	} else if(screen.innerHTML === output) {
-		var can = Math.sqrt(parseFloat(output));
+	} else {
+		var can = Math.sqrt(parseFloat(screen.innerHTML));
 		screen.innerHTML = can;
 	}
 }, false);
@@ -57,10 +66,10 @@ document.querySelector(".can").addEventListener("click", function() {
 document.querySelector(".giaithua").addEventListener("click", function() {
 	if (screen.innerHTML === "") {
 		screen.innerHTML = screen.innerHTML.concat("");
-	} else if (screen.innerHTML === output) {
-		var x = parseFloat(output);
+	} else {
+		var x = parseFloat(screen.innerHTML);
 		var giaiThua = 1;
-		for(var i = 1; i <= output; i++) {
+		for(var i = 1; i <= x; i++) {
 			giaiThua *= i;
 		}
 		screen.innerHTML = giaiThua;
@@ -70,8 +79,8 @@ document.querySelector(".giaithua").addEventListener("click", function() {
 document.querySelector(".binhphuong").addEventListener("click", function() {
 	if (screen.innerHTML === "") {
 		screen.innerHTML = screen.innerHTML.concat("");
-	} else if (screen.innerHTML === output) {
-		var binhPhuong = parseFloat(output);
+	} else {
+		var binhPhuong = parseFloat(screen.innerHTML);
 		binhPhuong *= binhPhuong;
 	}
 	screen.innerHTML = binhPhuong;

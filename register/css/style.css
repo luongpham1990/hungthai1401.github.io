@@ -1,0 +1,93 @@
+body {
+	font-family: "Comic Sans Ms";
+	font-size: 19px;
+	background-color: #000;
+	height: 100%;
+}
+
+#wrap {
+	height: 100%;
+	margin: auto;
+}
+
+.container {
+	width: 50%;
+	height: auto;
+	margin: 50px auto;
+	background-color: #fff;
+}
+
+.title {
+	width: 100%;
+	background-color: #51ED9A;
+}
+
+.title h1 {
+	padding: 15px;
+	font-size: 70px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container form, .info {
+	overflow: hidden;
+	padding: 25px;
+	background-color: #90C3D4;
+}
+
+.username, .password, .confirm, .email, .fb, .mobile, .birthday, .sex {
+	overflow: hidden;
+}
+
+.container span {
+	width: 30%;
+	float: left;
+	padding: 2px;
+}
+
+#error {
+	margin-left: 2px;
+	color: #FF0000;
+}
+
+.info p {
+	width: 30%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#info {
+	text-align: center;
+}
+
+.username input, .password input, .confirm input , .email input, .fb input, .mobile input {
+	width: 40%;
+	height: 1.5em;
+	margin-bottom: 20px;
+	float: left;
+	background-color: #000;
+	color: #fff;
+}
+
+.birthday select {
+	width: 40%;
+	height: 2em;
+	margin-bottom: 20px;
+	background-color: #000;
+	color: #fff;
+}
+
+.submit {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.submit input {
+	font-family: "Comic Sans Ms";
+	padding: 10px;
+	font-size: 20px;
+	background-color: #000;
+	color: #fff;
+}

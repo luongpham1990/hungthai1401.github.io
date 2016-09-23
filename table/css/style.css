@@ -1,0 +1,46 @@
+body {
+	font-family: "Comic Sans Ms";
+	font-size: 19px;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+#wrap {
+	height: 100%;
+	margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+td img {
+	width: 100px;
+	border-radius: 50%;
+}
+
+table {
+	width: 80%;
+	margin: 20px auto;
+}
+
+table, td, th {
+	border: 2px solid #fff;
+}
+
+td, th {
+	padding: 5px 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tbody > tr:hover {
+	background-color: #4F2E59;
+	color: #FF0080;
+}
+
+i {
+	margin-left: 10px;
+}

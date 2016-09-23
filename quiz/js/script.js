@@ -122,7 +122,7 @@ function nextQuestion() {
 		document.getElementById("ans3").innerHTML = arrQues[count].ans3;
 
 		if(count == max)
-			document.getElementById("next").innerHTML = "Result";
+			document.getElementById("next").innerHTML = "Kết quả";
 		count++;
 	} else {
 		if (lastScore == arrQues.length) {

@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gallery</title>
+	<title>Gallery | The Coffee House</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 
 <body>
 	<div class="wrap">
-		<div id="banner">
-			<img src="images/banner.jpg">
-		</div>
-		<div id="avatar">
-			<a href="about.html"><img src="images/avatar.jpg" alt="Avatar" title="Avatar"></a>
-		</div>
-		<div id="nav">
-			<a href="index.html">Trang chủ</a>
-			<a href="about.html">Giới thiệu</a>
-			<a href="gallery.html" class="active">Album ảnh</a>
-			<a href="post.html">Bài đăng</a>
-		</div>
-		<div id="main-content">
-			<div class="item">
-				<img src="images/1.jpg" alt="Aston Martin" title="Aston Martin">
+
+		<header class="container">
+			<div id="banner">
+				<img class="img-responsive" src="images/banner3.jpg">
 			</div>
-			<div class="item">
-				<img src="images/2.jpg" alt="Audi Q7" title="Audi Q7">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+							<li><a href="#">About</a></li>
+							<li class="active"><a href="#">Gallery</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<section class="container">
+			<div class="gallery">
+				<h3>Our Gallery</h3>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-1.jpg" class="thumbnail">
+							<img src="images/g-1.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-2.jpg" class="thumbnail">
+							<img src="images/g-2.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-3.jpg" class="thumbnail">
+							<img src="images/g-3.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-4.jpg" class="thumbnail">
+							<img src="images/g-4.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-5.jpg" class="thumbnail">
+							<img src="images/g-5.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-6.jpg" class="thumbnail">
+							<img src="images/g-6.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-7.jpg" class="thumbnail">
+							<img src="images/g-7.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-8.jpg" class="thumbnail">
+							<img src="images/g-8.jpg">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<a href="images/g-9.jpg" class="thumbnail">
+							<img src="images/g-9.jpg">
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="item">
-				<img src="images/3.jpg" alt="Audi RS" title="Audi RS">
+		</section>
+
+		<footer>
+			<div class="footer-text">
+				<p>© 2016 The Coffee House. All Rights Reserved</p>
 			</div>
-			<div class="item">
-				<img src="images/4.jpg" alt="Porsche" title="Porsche">
-			</div>
-			<div class="item">
-				<img src="images/5.jpg" alt="Infinity" title="Infinity">
-			</div>
-			<div class="item">
-				<img src="images/6.jpg" alt="BMW" title="BMW">
-			</div>
-			<div class="item">
-				<img src="images/7.jpg" alt="Bugatti" title="Bugatti">
-			</div>
-			<div class="item">
-				<img src="images/8.jpg" alt="Lamborghini" title="Lamborghini">
-			</div>
-			<div class="item">
-				<img src="images/9.jpg" alt="Lexus" title="Lexus">
-			</div>
-			<div class="item">
-				<img src="images/10.jpg" alt="Chervolet" title="Chervolet">
-			</div>
-		</div>
+		</footer>
+
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</div>
 </body>
 </html>

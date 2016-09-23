@@ -126,7 +126,7 @@ $(document).ready(function() {
 			$('#ans3').html(arrQues[count].ans3);
 			
 			if (count == max)
-				$('#next').text("Result");
+				$('#next').text("Kết quả");
 			count++;
 		} else {
 			if (lastScore == arrQues.length) {

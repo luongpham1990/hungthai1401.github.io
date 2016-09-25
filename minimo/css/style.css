@@ -444,6 +444,10 @@ footer {
 		margin: 0 0 0 15px;
 	}
 
+	.comment-container span {
+		padding: 65px 0;
+	}
+
 	/*<!---------- /Single ---------->*/
 
 	/*<!---------- Sidebar ---------->*/

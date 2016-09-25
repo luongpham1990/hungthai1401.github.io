@@ -12,10 +12,6 @@ body, html {
 	font-family: 'RobotoSlab-Regular';
 }
 
-.clearfix {
-	clear: both;
-}
-
 .abl-one {
 	text-align: center;
 }
@@ -302,6 +298,10 @@ body, html {
 
 .row a {
 	overflow: hidden;
+}
+
+.row div:hover a {
+	opacity: 0.7;
 }
 
 .row a div {

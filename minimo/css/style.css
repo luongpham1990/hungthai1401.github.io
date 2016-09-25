@@ -282,6 +282,7 @@ a, a:hover {
 
 .about {
 	overflow: hidden;
+	margin-top: 40px;
 }
 
 .about ul li {

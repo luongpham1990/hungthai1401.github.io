@@ -290,8 +290,7 @@ a, a:hover {
 }
 
 .about ul li {
-	margin-left: 0;
-	margin-right: 7px;
+	margin: 0 7px 0 0;
 }
 
 .about ul li a{
@@ -307,14 +306,14 @@ a, a:hover {
 }
 
 .post ul li {
-    margin-bottom: 30px;
-    list-style-type: circle;
-    list-style-position: inside;
+	margin-bottom: 30px;
+	list-style-type: circle;
+	list-style-position: inside;
 }
 
 .post ul li p {
 	color: #626262;
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .post ul li label {
@@ -327,7 +326,7 @@ a, a:hover {
 }
 
 .ads {
-	margin-bottom: 40px;
+	padding: 40px 0 40px;
 }
 
 /*<!---------- /Sidebar ---------->*/
@@ -454,6 +453,10 @@ footer {
 
 	.about {
 		margin-top: 100px;
+	}
+
+	.about ul li {
+		margin: 0 15px 0 0;
 	}
 
 	/*<!---------- /Sidebar ---------->*/

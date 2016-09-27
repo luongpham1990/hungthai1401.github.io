@@ -16,7 +16,7 @@ function getInfo() {
 		arrInfo.push(arr[i].split('='));
 	}
 	for (var i = 0; i < arrInfo.length; i++) {
-		$('.info').append('<p>' + arrInfo[i][0] + '</p><span>:</span><p id="info">' + arrInfo[i][1] + '</p>');
+		$('.info').append('<label>' + arrInfo[i][0] + '<span>:</span></label><p id="info">' + arrInfo[i][1] + '</p>');
 	}
 }
 

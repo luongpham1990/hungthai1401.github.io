@@ -40,7 +40,7 @@ body {
 	overflow: hidden;
 }
 
-.container span {
+.container label {
 	width: 30%;
 	float: left;
 	padding: 2px;
@@ -52,7 +52,7 @@ body {
 }
 
 .info p {
-	width: 30%;
+	width: 69%;
 	float: left;
 	margin-bottom: 20px;
 }

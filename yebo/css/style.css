@@ -1,0 +1,358 @@
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url('../fonts/Lato-Regular.eot');
+	src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Lato-Regular.woff') format('woff'),
+	url('../fonts/Lato-Regular.svg#maven_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.eot');
+	src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Lato-Bold.woff') format('woff'),
+	url('../fonts/Lato-Bold.svg#maven_probold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.eot');
+	src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Lato-Light.woff') format('woff'),
+	url('../fonts/Lato-Light.svg#maven_probold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Italic';
+	src: url('../fonts/Lato-Italic.eot');
+	src: url('../fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Lato-Italic.woff') format('woff'),
+	url('../fonts/Lato-Italic.svg#maven_probold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Lato-Regular';
+	font-size: 16px;
+}
+
+/* <-----------Header----------> */
+
+.top, .content-1, .content-3 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.top {
+	position: relative;
+}
+
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: inherit;
+	border: none;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+}
+
+.navbar-brand img{
+	width: 100%;
+}
+
+/* <-----------/Header----------> */
+
+/* <-----------Content----------> */
+
+.ct-1, .ct-3, footer {
+	background-color: #f7f7f7;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.ct-1 img, .ct-2 img, .item img {
+	margin: 0 auto;
+}
+
+.ct-1 h3, .ct-2 h3, .ct-3 h3 {
+	font-family: 'Lato-Bold';
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 10px;
+	color: #353738;
+}
+
+.ct-1 p, .ct-2 p, .ct-3 p {
+	font-family: 'Lato-Regular';
+	font-size: 15px;
+	text-align: justify;
+	padding-bottom: 10px;
+	color: #848789;
+}
+
+.ct-2 {
+	margin-top: 40px;
+}
+
+.upper {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.content-3 {
+	background-color: #f7f7f7;
+}
+
+.ct-3 h2 {
+	text-align: center;
+}
+
+.ct-3 h2 i {
+	color: #56c7ee;
+}
+
+.ct-3 .title {
+	padding: 0 auto;
+}
+
+.ct-3 h3::after {
+	content: "/  35 min";
+	font-family: 'Lato-Light';
+	font-size: 15px;
+	color: #848789;
+}
+
+.content-4 {
+	margin: 20px auto;
+}
+
+.item-3 {
+	/*margin-top: 20px;*/
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.content-5 {
+	background-color: #282f35;
+}
+
+.content-5 span {
+	display: block;
+	width: 80%;
+	padding: 20px 0;
+	margin: 20px auto;
+	text-align: center;
+	font-family: 'Lato-Bold';
+	font-size: 14px;
+	color: #fff;
+	border: 1px solid #94979a;
+}
+
+.content-6 {
+	padding: 20px 0;
+}
+
+.content-6 img {
+	margin: 0 auto;
+}
+
+.content-6 p {
+	text-align: center;
+	font-family: 'Lato-Italic';
+	font-size: 20px;
+	color: #848789;
+}
+
+#sub-email {
+	padding: 0 10px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+#btn-email {
+	color: #929292;
+	font-family: 'Lato-Italic';
+	font-size: 15px;
+	padding: 10px 10px;
+	border: 1px solid #d3d7d9;
+}
+
+#btn-send {
+	color: #fff;
+	background-color: #64c29e;
+	padding: 7px 12px;
+	border: 1px solid #64c29e;
+	font-family: 'Lato-Light';
+	font-size: 19px;
+}
+
+/* <-----------/Content----------> */
+
+/* <-----------Footer----------> */
+
+footer h3 {
+	font-family: 'Lato-Bold';
+	font-size: 15px;
+}
+
+footer p {
+	font-family: 'Lato-Italic';
+	font-size: 13px;
+}
+
+footer ul li {
+	float: left;
+	padding-right: 5px;
+}
+
+footer ul li a {
+	color: #000;
+}
+
+footer ul li a i {
+	font-size: 15px;
+}
+
+.footer-right p {
+	padding: 10px 0;
+	font-family: 'Lato-Italic';
+	font-size: 15px;
+}
+
+.sign {
+	display: block;
+	float: left;
+	width: 65%;
+}
+
+@media (min-width: 768px) {
+	
+	.ct-1 {
+		padding: 50px 50px;
+	}
+
+	.ct-1 h3, .ct-2 h3, .ct-3 h3 {
+		font-size: 18px;
+	}
+
+	.ct-1 p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.upper, .ct-2, .cell, .item {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.description {
+		padding-top: 75px;
+	}
+
+	.description p {
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 16px;
+	}
+
+	.upper img {
+		height: 600px;
+	}
+
+	.cell {
+		position: relative;
+		height: 600px;
+	}
+
+	.thumb {
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+	}
+
+	.ct-3 {
+		padding: 120px 50px;
+	}
+
+	.ct-3 p {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.content-4 {
+		margin: 0 auto;
+	}
+
+	.content-5 span {
+		width: 40%;
+		padding: 20px 30px;
+		margin: 80px auto;
+		font-size: 18px;
+	}
+
+	.content-6 {
+		padding: 110px 0;
+	}
+
+	.content-6 p {
+		font-size: 24px;
+		padding: 20px 0;
+	}
+
+	#btn-email {
+		width: 50%;
+		font-size: 24px;
+		padding: 25px 25px;
+		margin-right: 10px;
+	}
+
+	footer {
+		padding: 100px 0;
+	}
+
+	#btn-send {
+		font-size: 20px;
+		padding: 26px 26px;
+	}
+
+	.footer-left {
+		margin-left: 50px;
+	}
+
+	.footer-middle {
+		padding: 20px;
+	}
+
+	.footer-middle ul li {
+		text-align: center;
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+	.footer-right p {
+		text-align: right;
+		font-size: 13px;
+		margin: 0;
+	}
+
+}

@@ -1,0 +1,10 @@
+h5 {
+	text-align: center;
+	padding-top: 5px;
+/*	color: #fff;*/
+}
+
+.ui state hightlight {
+	background-color: #fafafa;
+	height: calc(1.5rem + 20px);
+}

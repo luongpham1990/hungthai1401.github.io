@@ -10,19 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.transitions.css">
+	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
 	<header class="container-fluid nopadding">
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
-				<div class="nav-icon">
-					<ul class="support-right">
-						<li><a class="" href="#"><img src="images/19.png" alt="Logo"></a></li>
-						<li><a class="" href="#"><img src="images/57.png" alt="Logo"></a></li>
-						<li><a class="" href="#"><img src="images/3.png" alt="Logo"></a></li>			
-					</ul>
-				</div>
+				
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -31,54 +27,406 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand text-center" href="#"><img src="images/logo.png" alt="Logo" class="img-responsive"></a>
+					<a class="navbar-brand text-center" href="#"><img src="images/bicycle-logo.png" alt="Logo" class="img-responsive"></a>
+					<div class="nav-icon hide-md">
+						<ul class="icon-right">
+							<li><a class="" href="#"><img src="images/account.png" alt="Login"></a></li>
+							<li><a class="" href="#"><img src="images/cart.png" alt="Cart"></a></li>
+							<li><a class="" href="#"><img src="images/search.png" alt="Search"></a></li>
+						</ul>
+					</div>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse text-center">
-					<div class="col-xs-12 col-sm-10 col-md-8 nav-wrap">
+					<div class="col-xs-12 col-sm-12 col-md-8 nav-wrap">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Home</a></li>
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Products</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
+					<div class="icon-md">
+						<ul class="nav navbar-nav">
+							<li><a class="" href="#"><img src="images/account.png" alt="Cart"></a></li>
+							<li><a class="" href="#"><img src="images/cart.png" alt="Cart"></a></li>
+							<li><a class="" href="#"><img src="images/search.png" alt="Cart"></a></li>
+						</ul>
+					</div>
 				</div><!-- /.navbar-collapse -->
 			</div>
 		</nav>
-		<div id="slide" class="owl-carousel owl-theme">
-			<div class="item slide1">
-				<div class="caption">
-					<h6>Branding / Design / Creativety</h6>
-					<h1>We Are <span>Rise</span></h1>
-					<a href="#" class="btn btn-transparent">Learn More</a><a href="#" class="btn btn-light">Buy Now</a>
+	</header>
+
+	<section class="container nopadding havemargin product">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-3 product-left">
+				<div class="product-cate">
+					<div class="product-cate-title">
+						<h3>Categories</h3>
+						<img src="images/line.png" alt="" class="img-responsive">
+					</div>
+					<ul class="product-menu">
+						<li><a href="">MOUNTAIN BIKES</a></li>
+						<li><a href="">SINGLE SPEED-BIKES</a></li>
+						<li><a href="">ROAD-BIKES</a></li>
+					</ul>
+				</div>
+				<div class="product-price">
+					<div class="product-price-title">
+						<h3>Price</h3>
+						<img src="images/line.png" alt="" class="img-responsive">
+					</div>
+					<ul class="product-price-amount">
+						<li><a href="#">
+							<p>
+								<label for="amount" class="price-amount">Range:</label>
+								<input type="text" id="price-amount" style="border: 0; color: #ff5d56; font-weight: bold;" />
+
+							</p>
+
+							<div id="slider-range"></div>
+						</a></li>
+
+					</ul>
 				</div>
 			</div>
-
-			<div class="item slide2">
-				<div class="caption">
-					<h6>Branding / Design / Creativety</h6>
-					<h1>Creative <span>Design</span></h1>
-					<a href="#" class="btn btn-transparent">Learn More</a><a href="#" class="btn btn-light">Buy Now</a>
+			<div class="col-xs-12 col-sm-8 col-md-9 product-right">
+				<h3>All Products</h3>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/bik1.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</div>
-			</div>
-
-			<div class="item slide3">
-				<div class="caption">
-					<h6>Branding / Design / Creativety</h6>
-					<h1>Clean <span>Code</span></h1>
-					<a href="#" class="btn btn-transparent">Learn More</a><a href="#" class="btn btn-light">Buy Now</a>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/bik2.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/bik3.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/bik4.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/bik5.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/bik6.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/r1.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/r2.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/r3.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/r4.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/s1.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/s2.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/s3.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+					<div class="product-img">
+						<a href="">
+							<img src="images/s4.jpg" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="product-cost">
+						<div class="product-model">
+							<h4>M458</h4>
+							<p>5.000.000</p>
+						</div>
+						<div class="product-cart">
+							<a class="btn btn-buy" href="">Buy Now</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 product-pagination container text-right">
+					<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
-	</header>
+	</section>
+
+	<footer class="container-fluid nopadding footer">
+		<div class="container-fluid">
+			<div class="col-xs-12 col-sm-4 col-md-4 footer-left">
+				<a href=""><img src="images/bicycle-logo.png" alt="" class="img-responsive center-block"></a>
+				<div class="social">
+					<a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a>
+					<a href=""><img src="images/instagram.png" alt="Instagram" title="Instagram"></a>
+					<a href=""><img src="images/twitter.png" alt="Twitter" title="Twitter"></a>
+					<a href=""><img src="images/youtube.png" alt="youtube" title="Youtube"></a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 footer-middle">
+				<div class="contact-img">
+					<img src="images/map-pin.png">
+				</div>
+				<div class="contact-info">
+					<p>
+						<span>
+							Add 1: 8 Nguyen Thiep
+							<br />
+							Add 2: 5 Khuong Trung
+							<br />
+							Add 3: 124 Bach Dang
+						</span>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="contact-img">
+					<img src="images/phone-icon.png">
+				</div>
+				<div class="contact-info">
+					<p>
+						<span>
+							Mobile: 0975 799 391
+							<br />
+							Fax: (04) 3 758 1155
+						</span>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="contact-img">
+					<img src="images/mail-icon2.png">
+				</div>
+				<div class="contact-info">
+					<p>
+						<span>
+							<a href="mailto:risebike.vn@gmail.com">risebike.vn@gmail.com</a>
+						</span>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 footer-right">
+				<h3>Newsletter</h3>
+				<p>IN THE NEXT ARTICLE</p>
+				<p>NRL: five things we learned this weekend
+					In support of suburban games; Warriors rip
+				</p>
+				<input type="text" placeholder="Enter your email">
+				<input type="submit" name="" value="Go">
+			</div>
+		</div>
+	</footer>
 
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

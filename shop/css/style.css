@@ -909,7 +909,38 @@ h6 {
 	display: block;
 	float: right;
 	font-size: 14px;
+}
+
+.archives {
+	padding: 15px 15px;
+}
+
+.archives h3 {
+	padding: 10px;
+	background-color: #000;
+	margin: 0 auto;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.archives ul {
+	padding: 0;
+	margin-top: 8%;
+}
+
+.archives ul li {
+	list-style-image: url(../images/dot.png);
+	text-align: left;
 	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.archives ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
 }
 
 /* <-----------/Blog----------> */

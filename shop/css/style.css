@@ -793,24 +793,107 @@ h6 {
 	content: " VND";
 }
 
-.product-detail p {
+.product-detail h4 {
 	text-transform: uppercase;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #000;
 	text-align: justify all;
 }
 
-.product-detail p a {
+.product-detail h4 a {
 	text-decoration: none;
-	padding: 5px 7px;
 	color: #fff;
+	padding: 5px;
 	background-color: #000;
 	margin-right: 5px;
+}
+
+.product-detail h4 a label {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
 }
 
 .product-detail-buy {
 	margin: 30px auto;
 	padding-left: 20px;
+}
+
+ul.product-color h4, ul.product-quantity h4 {
+	padding-bottom: 0 !important;
+}
+
+ul.product-color {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+ul.product-color > li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+ul.product-color > li > a > label {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+#color1 label {
+	background-color: #000;
+}
+
+#color2 label {
+	background-color: #45BF55;
+}
+
+#color3 label {
+	background-color: #0AA5E2;
+}
+
+#color4 label {
+	background-color: #EE82EE;
+}
+
+#color5 label {
+	background-color: #4C5457;
+}
+
+#color6 label {
+	background-color: #E2FF29;
+}
+
+.product-quantity {
+	margin: 20px 0;
+}
+
+.descre, .incre {
+	text-decoration: none;
+	line-height: 1em;
+	background-color: #000;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+}
+
+.descre:hover label, .incre:hover label {
+	color: #fff;
+}
+
+.descre label, .incre label {
+	width: 30px;
+	height: 30px;
+	color: #fff;
+}
+
+.product-quantity input[type=text] {
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+	line-height: 1em;
+	text-align: center;
+	border: none;
+	border-left: 1px solod #dddddd;
+	border-right: 1px solod #dddddd;
 }
 
 .btn-bn, .btn-atc {

@@ -97,4 +97,42 @@ $(document).ready(function() {
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 
+    $.resetColor = function() {
+        $('.color').each(function() {
+            $(this).css('border', '');
+        });
+        $('.size').each(function() {
+            $(this).css('border', '');
+        });
+    }
+
+    $('.color').click(function() {
+        $.resetColor();
+        $(this).css('border', '3px solid #393A3B');
+        return false;
+    });
+
+    $('.size').click(function() {
+        $.resetColor();
+        $(this).css('border', '3px solid #393A3B');
+        return false;
+    });
+
+
+    $('#descre').click(function() {
+        var total = parseFloat($('#total').val());
+        if (total > 0) {
+            total -= 1;
+            $('#total').val(total);
+        }
+        return false; // dont' reload html
+    });
+
+    $('#incre').click(function() {
+        var total = parseFloat($('#total').val());
+        total += 1;
+        $('#total').val(total);
+        return false;
+    });
+
 });

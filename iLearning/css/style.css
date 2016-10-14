@@ -468,6 +468,37 @@ h5 {
 	height: 200px;
 	width: 100%;
 }
+.comment-box {
+	border: 1px solid #e4e8ee;
+	border-image: initial;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.comment-user-avatar {
+	margin-top: 20px;
+	overflow: hidden;
+}
+.comment-user-content {
+	padding: 20px 20px;
+}
+.comment-user-name {
+	margin-bottom: 10px;
+}
+.comment-user-data {
+	padding-bottom: 15px;
+	width: 100%;
+}
+.comment-reply a.btn-reply {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.comment-field {
+	padding: 20px 0;
+}
+.field-name, .field-email, .field-comment, .btn-comment {
+	margin-bottom: 20px;
+} 
 /*<!---------- /Single Blog  ----------!>*/
 /*<!---------- Footer  ----------!>*/
 .footer {
@@ -1246,6 +1277,12 @@ input#new-password {
 	}
 	.blog-detail-content ul li {
 		margin-left: 40px;
+	}
+	.hide-sm {
+		display: none;
+	}
+	.show-sm {
+		display: block;
 	}
 }
 

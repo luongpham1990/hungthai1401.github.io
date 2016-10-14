@@ -1,4 +1,43 @@
 $(document).ready(function() {
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').css('display', 'block');
+        } else {
+            $('.scrollToTop').css('display', 'none');
+        };
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},600);
+        return false;
+    });
+
+    // Show Find Box
+
+    $('.find-box-md').on('click', function() {
+        $('.find-container-md').css('display', 'block');
+        $('.find-md').css('display', 'block');
+        $('#find-md').css('display', 'block');
+        $('#find-md').trigger('focus');
+    });
+
+    $('#find-md').focusout(function() {
+        $('.find-container-md').css('display', 'none');
+    });
+
+    $('.find-box-xs-sm').on('click', function() {
+        $('.find-container-xs-sm').css('display', 'block');
+        $('.find-xs-sm').css('display', 'block');
+        $('#find-xs-sm').css('display', 'block');
+        $('#find-xs-sm').trigger('focus');
+    });
+
+    $('#find-xs-sm').focusout(function() {
+        $('.find-container-xs-sm').css('display', 'none');
+    });
+
     /***************** Owl Carousel ******************/
 
     $("#slide").owlCarousel({
@@ -115,7 +154,7 @@ $(document).ready(function() {
     $('.size').click(function() {
         $.resetColor();
         $(this).css('border', '3px solid #393A3B');
-        return false;
+        return false; // dont' reload html
     });
 
 
@@ -125,7 +164,7 @@ $(document).ready(function() {
             total -= 1;
             $('#total').val(total);
         }
-        return false; // dont' reload html
+        return false;
     });
 
     $('#incre').click(function() {
@@ -135,4 +174,22 @@ $(document).ready(function() {
         return false;
     });
 
+    $('.delete1').click(function() {
+        $('.box-1').fadeOut('slow', function() {
+            $('.box-1').remove();
+        });
+    });
+
+    $('.delete2').click(function() {
+        $('.box-2').fadeOut('slow', function() {
+            $('.box-2').remove();
+        });
+    });
+
+    $('#delete').click(function() {
+        $('.cart-box').fadeOut('slow', function() {
+            $('.cart-box').remove();
+        });
+    });
+    
 });

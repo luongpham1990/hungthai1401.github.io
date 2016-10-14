@@ -30,9 +30,9 @@
 					<a class="navbar-brand text-center" href="#"><img src="images/bicycle-logo.png" alt="Logo" class="img-responsive"></a>
 					<div class="nav-icon hide-md">
 						<ul class="icon-right">
-							<li><a class="" href="#"><img src="images/account.png" alt="Login"></a></li>
-							<li><a class="" href="#"><img src="images/cart.png" alt="Cart"></a></li>
-							<li><a class="" href="#"><img src="images/search.png" alt="Search"></a></li>
+							<li><a class="" href="#" data-toggle="modal" data-target="#modal-form" data-backdrop="false"><img src="images/account.png" alt="Login"></a></li>
+							<li><a class="cart.html" href="#"><img src="images/cart.png" alt="Cart"></a></li>
+							<li><a class="find-box-xs-sm" href="#"><img src="images/search.png" alt="Search"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -50,9 +50,9 @@
 					</div>
 					<div class="icon-md">
 						<ul class="nav navbar-nav">
-							<li><a class="" href="#"><img src="images/account.png" alt="Cart"></a></li>
+							<li><a class="" href="#" data-toggle="modal" data-target="#modal-form"><img src="images/account.png" alt="Cart"></a></li>
 							<li><a class="" href="#"><img src="images/cart.png" alt="Cart"></a></li>
-							<li><a class="" href="#"><img src="images/search.png" alt="Cart"></a></li>
+							<li><a class="find-box-md" href="javascript:void(0)"><img src="images/search.png" alt="Cart"></a></li>
 						</ul>
 					</div>
 				</div><!-- /.navbar-collapse -->
@@ -327,6 +327,90 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="find-container-md">
+		<div class="find-md">
+			<div class="input-group">
+				<input type="text" name="" id="find-md" class="form-control" value="" required="required" pattern="" title="" placeholder="Enter your search term...">
+			</div>
+		</div>
+	</div>
+
+	<div class="find-container-xs-sm">
+		<div class="find-xs-sm">
+			<div class="input-group">
+				<input type="text" name="" id="find-xs-sm" class="form-control" value="" required="required" pattern="" title="" placeholder="Enter your search term...">
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div role="tabpanel">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#login-form" aria-controls="home" role="tab" data-toggle="tab">LOGIN</a>
+							</li>
+							<li role="presentation">
+								<a href="#register-form" aria-controls="tab" role="tab" data-toggle="tab">REGISTER</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="login-form">
+							<form class="form-login">
+								<input type="email" name="" id="email" class="form-control" value="" required="required" title="" placeholder="Email">
+								<input type="password" name="" id="password" class="form-control" required="required" title="" placeholder="Password">
+								<div class="form-text">
+									<ul>
+										<li><label>
+											<input type="checkbox" value="">
+											<span>Remember Me?</span>
+										</label></li>
+										<li>
+											<a href="#">Forgot Passowrd</a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="form-submit text-center">
+									<button type="submit" class="btn btn-danger">Login</button>
+								</div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="register-form">
+							<form class="form-register">
+								<input type="text" name="" id="fullname" class="form-control" value="" required="required" title="" placeholder="Fullname">
+								<input type="email" name="" id="email" class="form-control" value="" required="required" title="" placeholder="Email">
+								<input type="password" name="" id="password" class="form-control" required="required" title="" placeholder="Password">
+								<input type="password" name="" id="confirmpass" class="form-control" required="required" title="" placeholder="Confirm Password">
+								<input type="text" name="" id="mobile" class="form-control" value="" required="required" title="" placeholder="Mobile">
+								<div class="form-text">
+									<ul>
+										<li><label>
+											<input type="checkbox" value="">
+											<span>I accept the terms of use</span>
+										</label></li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="form-submit text-center">
+									<button type="submit" class="btn btn-danger">Register</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
+	
+	<a href="#" class="scrollToTop"><img src="images/backToTop.png"></a>
 
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>

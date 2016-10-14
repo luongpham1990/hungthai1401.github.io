@@ -41,10 +41,10 @@
 				<div class="collapse navbar-collapse navbar-ex1-collapse text-center">
 					<div class="col-xs-12 col-sm-12 col-md-8 nav-wrap">
 						<ul class="nav navbar-nav">
-							<li><a href="#">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="#">About Us</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="blog.html">Blog</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
@@ -86,7 +86,7 @@
 			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-8 product-detail">
 				<h3>M458</h3>
 				<h4>Type: </h4>
-				<span>5.000.000</span>
+				<span id="product-price">5.000.000</span>
 				<ul class="product-color">
 					<h4>Available colors:</h4>
 					<li><a id="color1" href=""><label class="color"></label></a></li>
@@ -96,21 +96,104 @@
 					<li><a id="color5" href=""><label class="color"></label></a></li>
 					<li><a id="color6" href=""><label class="color"></label></a></li>
 				</ul>
-				<h4 id="size">Size: <a class="size" href=""><label>XS</label></a>
-					<a class="size" href=""><label>S</label></a>
-					<a class="size" href=""><label>M</label></a>
-				</h4>
+				<ul class="product-size">
+					<h4>Size:</h4>
+					<li><a id="sizeXS" href=""><label class="size">XS</label></a></li>
+					<li><a id="sizeS" href=""><label class="size">S</label></a></li>
+					<li><a id="sizeM" href=""><label class="size">M</label></a></li>
+				</ul>
 				<ul class="product-quantity">
 					<h4>Quantity:</h4>
 					<a href="#" class="descre" id="descre"><label>-</label></a>
 					<input id="total" type="text" value="0" name="">
 					<a href="#" class="incre" id="incre"><label>+</label></a>
 				</ul>
+				
+				<div class="product-des" role="tabpanel">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#description" aria-controls="home" role="tab" data-toggle="tab">DESCRIPTION</a>
+						</li>
+						<li role="presentation">
+							<a href="#review" aria-controls="tab" role="tab" data-toggle="tab">REVIEW</a>
+						</li>
+					</ul>
 
-				<h4>Description:</h4>
-				<p>The first mechanically-propelled, two-wheeled vehicle may have been built by Kirkpatrick MacMillan, a Scottish blacksmith, in 1839, although the claim is often disputed. He is also associated with the first recorded instance of a cycling traffic offense, when a Glasgow newspaper in 1842 reported an accident in which an anonymous "gentleman from Dumfries-shire... bestride a velocipede... of ingenious design" knocked over a little girl in Glasgow and was fined five.</p>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="description"><p>The first mechanically-propelled, two-wheeled vehicle may have been built by Kirkpatrick MacMillan, a Scottish blacksmith, in 1839, although the claim is often disputed. He is also associated with the first recorded instance of a cycling traffic offense, when a Glasgow newspaper in 1842 reported an accident in which an anonymous "gentleman from Dumfries-shire... bestride a velocipede... of ingenious design" knocked over a little girl in Glasgow and was fined five.<p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="review">
+							<div class="row comment-container">
+								<div class="col-xs-4 col-sm-3 col-md-3 comment-avatar">
+									<a href=""><img src="images/avatar.png" alt="Avatar" class="img-responsive"></a>
+									<a class="name text-center" href=""><p>Faker</p></a>
+								</div>
+								<div class="col-xs-8 col-sm-9 col-md-9 comment-detail">
+									<div class="comment-name">
+										<a href=""><p>Faker</p></a>
+									</div>
+									<div class="comment-full">
+										<p>
+											NRL: five things we learned this weekend
+											In support of suburban games; Warriors rip
+										</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-xs-4 col-sm-3 col-md-3 comment-avatar">
+									<a href=""><img src="images/avatar.png" alt="Avatar" class="img-responsive"></a>
+									<a class="name text-center" href=""><p>Faker</p></a>
+								</div>
+								<div class="col-xs-8 col-sm-9 col-md-9 comment-detail">
+									<div class="comment-name">
+										<a href=""><p>Faker</p></a>
+									</div>
+									<div class="comment-full">
+										<p>
+											NRL: five things we learned this weekend
+											In support of suburban games; Warriors rip
+										</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-xs-4 col-sm-3 col-md-3 comment-avatar">
+									<a href=""><img src="images/avatar.png" alt="Avatar" class="img-responsive"></a>
+									<a class="name text-center" href=""><p>Faker</p></a>
+								</div>
+								<div class="col-xs-8 col-sm-9 col-md-9 comment-detail">
+									<div class="comment-name">
+										<a href=""><p>Faker</p></a>
+									</div>
+									<div class="comment-full">
+										<p>
+											NRL: five things we learned this weekend
+											In support of suburban games; Warriors rip
+										</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="comment-form">
+								<div class="col-xs-12 col-sm-6 col-md-6">
+									<input type="text" name="" id="name" class="form-control" value="" required="required" pattern="" title="" placeholder="Name">
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-6">
+									<input type="email" name="" id="email" class="form-control" value="" required="required" title="" placeholder="Email">
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<textarea name="" id="comment" class="form-control" rows="3" required="required" placeholder="Comment"></textarea>
+								</div>
+								<div class=" submit text-center">
+									<a href="" class="btn btn-bn">Send</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-				<div class="product-detail-buy">
+				<div class="product-detail-buy text-center">
 					<a class="btn btn-bn" href="">buy now</a>
 					<a class="btn btn-atc" href="">add to cart</a>
 				</div>
@@ -132,7 +215,7 @@
 						<div class="text-center">
 							<span>5.000.000</span>
 						</div>
-						
+
 						<div class="related-product-buy text-center">
 							<a href="" class="btn btn-atc">add to cart</a>
 						</div>
@@ -148,7 +231,7 @@
 						<div class="text-center">
 							<span>5.000.000</span>
 						</div>
-						
+
 						<div class="related-product-buy text-center">
 							<a href="" class="btn btn-atc">add to cart</a>
 						</div>
@@ -164,7 +247,7 @@
 						<div class="text-center">
 							<span>5.000.000</span>
 						</div>
-						
+
 						<div class="related-product-buy text-center">
 							<a href="" class="btn btn-atc">add to cart</a>
 						</div>
@@ -180,7 +263,7 @@
 						<div class="text-center">
 							<span>5.000.000</span>
 						</div>
-						
+
 						<div class="related-product-buy text-center">
 							<a href="" class="btn btn-atc">add to cart</a>
 						</div>
@@ -196,7 +279,7 @@
 						<div class="text-center">
 							<span>5.000.000</span>
 						</div>
-						
+
 						<div class="related-product-buy text-center">
 							<a href="" class="btn btn-atc">add to cart</a>
 						</div>
@@ -269,7 +352,9 @@
 			</div>
 		</div>
 	</footer>
-
+	
+	<a href="#" class="scrollToTop"><img src="images/backToTop.png"></a>
+	
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.min.js"></script>

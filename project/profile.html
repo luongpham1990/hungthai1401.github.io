@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin cá nhân | IVERSITY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header class="container-fluid nopadding">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-dashboard" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle navbar-menu hide-mobile menu-sidebar">
+						<img src="images/menu-toggle.png" alt="" class="img-responsive hide-laptop">
+					</button>
+					<a class="navbar-brand logo-left" href="#"><img src="images/code.png" alt="Logo" class="img-responsive"></a>
+					<button type="button" class="navbar-toggle navbar-search">
+						<img src="images/search.png" alt="" class="img-responsive hide-laptop">
+					</button>
+					<button type="button" class="navbar-toggle navbar-account" data-toggle="modal" data-target="#modal-form">
+						<img src="images/account.png" alt="" class="img-responsive hide-laptop">
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+						<li class="dropdown">
+							<a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<nav class="overflow-nav">
+			<div class="overflow-nav-main">
+				<div class="overflow-nav-profile text-center">
+					<a href=""><img src="images/anonymous.png" alt="" class="img-responsive overflow-nav-avatar"></a>
+					<p class="overflow-nav-user">Nguyễn Hưng Thái</p>
+				</div>
+				<ul class="overflow-nav-menu">
+					<li><a id="menu-courses" href="javascript:void(0)">
+						<span class="menu-title">Thông tin cá nhân
+						</span>
+					</a></li>
+					<li><a href=""><span class="menu-title">Thông báo</span></a></li>
+					<li><a href=""><span class="menu-title">Khóa học của tôi</span></a></li>
+					<li><a href=""><span class="menu-title">Đăng xuất</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="overlay-mobile">
+		</div>
+	</header>
+
+	<section class="container-fluid my-profile">
+		<div class="my-profile-left hide-mobile">
+			<div class="my-profile-nav">
+				<div class="my-profile-avatar">
+					<img src="images/anonymous.png" alt="Avatar" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+				</div>
+				<ul>
+					<li><a href="javascript:void(0)" id="my-profile">Thông tin cá nhân</a></li>
+					<li><a href="">Thông báo</a></li>
+					<li><a href="javascript:void(0)" id="my-course"><a href="">Khóa học của tôi</a></li>
+					<li><a href="">Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="my-profile-right">
+			<div class="my-profile-info">
+				<div class="my-profile-title">
+					<h3>Thông tin cá nhân</h3>
+					<p>Thêm các thông tin cá nhân của bạn</p>
+				</div>
+				<div class="my-profile-form">
+					<form action="">
+						<div class="my-profile-change-avatar">
+							<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 avatar-img">
+								<img src="images/anonymous.png" alt="" class="img-responsive">
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 avatar-btn text-center">
+								<p>Bạn có thể tải ảnh đại diện từ máy tính hoặc chọn một trong thư viện có sẵn của chúng tôi</p>
+								<button type="button" class="btn btn-primary btn-avatar">Thay ảnh đại diện</button>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="my-profile-change-info">
+							<div class="change-email">
+								<input type="text" name="" id="input" class="form-control" value="hungthai1401@gmail.com" required="required" pattern="" title="" disabled>
+								<a class="btn btn-primary edit-info" data-toggle="modal" href='#modal-change-email'><i class="fa fa-pencil" aria-hidden="true"></i></a>
+							</div>
+							<div class="change-password">
+								<input type="password" name="" id="input" class="form-control" value="******" required="required" pattern="" title="" disabled>
+								<a class="btn btn-primary edit-info" data-toggle="modal" href='#modal-change-password'><i class="fa fa-pencil" aria-hidden="true"></i></a>
+							</div>
+							<input type="text" name="" id="input" class="form-control" value="Nguyễn Hưng Thái" required="required" pattern="" title="">
+						</div>
+						<div class="my-profile-change-social">
+							<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Google Plus">
+							<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Facebook">
+							<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Twitter">
+						</div>
+						<div class="my-profile-btn-change text-center">
+							<button type="button" class="btn btn-danger btn-exit hide-laptop">Hủy</button>
+							<button type="button" class="btn btn-primary btn-save">Lưu</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="modal fade" id="modal-change-email">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h4>Thay đổi email:</h4>
+					<input type="text" name="" id="new-email" class="form-control" value="" required="required" pattern="" title="" placeholder="Email mới">
+					<div class="text-center">
+						<button type="button" class="btn btn-primary btn-change">Thay đổi</button>
+						<button type="button" class="btn btn-danger btn-esc" data-dismiss="modal" aria-label="Close">Hủy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-change-password">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h4>Thay đổi mật khẩu:</h4>
+					<input type="text" name="" id="new-password" class="form-control" value="" required="required" pattern="" title="" placeholder="Mật khẩu cũ">
+					<input type="text" name="" id="new-password" class="form-control" value="" required="required" pattern="" title="" placeholder="Mật khẩu mới">
+					<input type="text" name="" id="new-password" class="form-control" value="" required="required" pattern="" title="" placeholder="Xác nhận mật khẩu">
+					<div class="text-center">
+						<button type="button" class="btn btn-primary btn-change">Thay đổi</button>
+						<button type="button" class="btn btn-danger btn-esc" data-dismiss="modal" aria-label="Close">Hủy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#" class="btn btn-primary scrollToTop"><i class=" fa fa-2x fa-arrow-up"></i></a>
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

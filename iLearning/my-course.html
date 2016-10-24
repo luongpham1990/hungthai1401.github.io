@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -61,231 +62,229 @@
 	</header>
 
 	<section class="container-fluid my-course">
-		<div class="row">
-			<div class="my-profile-left">
-				<div class="my-profile-nav">
-					<div class="my-profile-avatar">
-						<img src="images/anonymous.png" alt="Avatar" class="img-responsive">
-						<h5>Nguyễn Hưng Thái</h5>
-					</div>
-					<ul>
-						<li><a href="javascript:void(0)" id="my-profile">Thông tin cá nhân</a></li>
-						<li><a href="">Thông báo</a></li>
-						<li <a href="javascript:void(0)" id="my-course"><a href="">Khóa học của tôi</a></li>
-						<li><a href="">Phương thức thanh toán</a></li>
-					</ul>
+		<div class="my-profile-left">
+			<div class="my-profile-nav">
+				<div class="my-profile-avatar">
+					<img src="images/anonymous.png" alt="Avatar" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
 				</div>
+				<ul>
+					<li><a href="javascript:void(0)" id="my-profile">Thông tin cá nhân</a></li>
+					<li><a href="">Thông báo</a></li>
+					<li <a href="javascript:void(0)" id="my-course"><a href="">Khóa học của tôi</a></li>
+					<li><a href="">Phương thức thanh toán</a></li>
+				</ul>
 			</div>
+		</div>
 
-			<div class="my-profile-right">
-				<div class="my-profile-info">
-					<div class="my-profile-title">
-						<h3>Các khóa học của tôi</h3>
-						<p>Các khóa học đã mua</p>
-					</div>
-					<div class="my-course-container">
-						<div class="my-course-done">
-							<h4>Các khóa học đã hoàn thành</h4>
-							<div class="row">
-								<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
-									<div class="course-box">
-										<div class="course-img">
-											<a href=""><img src="images/php.jpg" alt="PHP" class="img-responsive"></a>
-											<div class="overlay-course">
-												<div class="overlay-detail">
-													<span class="course-avatar">
-														<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
-													</span>
-													<span>
-														69 Lectures<br/>
-														108 Hours
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="course-info">
-											<a href=""><span class="course-title">Lập trình PHP 7 qua dự án thực tế</span></a>
-											<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
-											<div class="course-review">
-												<span class="star-rate">
-													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+		<div class="my-profile-right">
+			<div class="my-profile-info">
+				<div class="my-profile-title">
+					<h3>Các khóa học của tôi</h3>
+					<p>Các khóa học đã mua</p>
+				</div>
+				<div class="my-course-container">
+					<div class="my-course-done">
+						<h4>Các khóa học đã hoàn thành</h4>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
+								<div class="course-box">
+									<div class="course-img">
+										<a href=""><img src="images/php.jpg" alt="PHP" class="img-responsive"></a>
+										<div class="overlay-course">
+											<div class="overlay-detail">
+												<span class="course-avatar">
+													<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
+												</span>
+												<span>
+													69 Lectures<br/>
+													108 Hours
 												</span>
 											</div>
-											<div class="clearfix"></div>
 										</div>
 									</div>
-								</div>
-								<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
-									<div class="course-box">
-										<div class="course-img">
-											<a href=""><img src="images/magento.jpg" alt="Magento 2" class="img-responsive"></a>
-											<div class="overlay-course">
-												<div class="overlay-detail">
-													<span class="course-avatar">
-														<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
-													</span>
-													<span>
-														69 Lectures<br/>
-														108 Hours
-													</span>
-												</div>
-											</div>
+									<div class="course-info">
+										<a href=""><span class="course-title">Lập trình PHP 7 qua dự án thực tế</span></a>
+										<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+										<div class="course-review">
+											<span class="star-rate">
+												<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+												<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+												<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+												<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+												<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+												<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+												<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+												<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+												<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+												<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+											</span>
 										</div>
-										<div class="course-info">
-											<a href=""><span class="course-title">Xây dựng website bán hàng với Magento 2</span></a>
-											<a class="instructor" href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
-											<div class="course-review">
-												<span class="star-rate">
-													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-												</span>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-
+										<div class="clearfix"></div>
 									</div>
 								</div>
-								<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
-									<div class="course-box">
-										<div class="course-img">
-											<a href=""><img src="images/wordpress.jpg" alt="WordPress" class="img-responsive"></a>
-											<div class="overlay-course">
-												<div class="overlay-detail">
-													<span class="course-avatar">
-														<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
-													</span>
-													<span>
-														69 Lectures<br/>
-														108 Hours
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="course-info">
-											<a href=""><span class="course-title">Xây dựng website doanh nghiệp với WordPress</span></a>
-											<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
-											<div class="course-review">
-												<span class="star-rate">
-													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
+								<div class="course-box">
+									<div class="course-img">
+										<a href=""><img src="images/magento.jpg" alt="Magento 2" class="img-responsive"></a>
+										<div class="overlay-course">
+											<div class="overlay-detail">
+												<span class="course-avatar">
+													<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
+												</span>
+												<span>
+													69 Lectures<br/>
+													108 Hours
 												</span>
 											</div>
-											<div class="clearfix"></div>
 										</div>
+									</div>
+									<div class="course-info">
+										<a href=""><span class="course-title">Xây dựng website bán hàng với Magento 2</span></a>
+										<a class="instructor" href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+										<div class="course-review">
+											<span class="star-rate">
+												<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+												<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+												<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+												<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+												<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+												<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+												<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+												<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+												<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+												<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+											</span>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
+								<div class="course-box">
+									<div class="course-img">
+										<a href=""><img src="images/wordpress.jpg" alt="WordPress" class="img-responsive"></a>
+										<div class="overlay-course">
+											<div class="overlay-detail">
+												<span class="course-avatar">
+													<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
+												</span>
+												<span>
+													69 Lectures<br/>
+													108 Hours
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="course-info">
+										<a href=""><span class="course-title">Xây dựng website doanh nghiệp với WordPress</span></a>
+										<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+										<div class="course-review">
+											<span class="star-rate">
+												<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+												<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+												<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+												<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+												<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+												<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+												<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+												<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+												<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+												<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+											</span>
+										</div>
+										<div class="clearfix"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="my-course-doing">
-							<h4>Các khóa học đang theo học</h4>
-							<div class="row">
-								<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
-									<div class="course-box">
-										<div class="course-img">
-											<a href=""><img src="images/spring.jpg" alt="Java Spring" class="img-responsive"></a>
-											<div class="overlay-course">
-												<div class="overlay-detail">
-													<span class="course-avatar">
-														<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
-													</span>
-													<span>
-														69 Lectures<br/>
-														108 Hours
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="course-info">
-											<a href=""><span class="course-title">Lập trình Web Java Spring</span></a>
-											<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
-											<div class="course-review">
-												<span class="star-rate">
-													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</div>
+					<div class="my-course-doing">
+						<h4>Các khóa học đang theo học</h4>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
+								<div class="course-box">
+									<div class="course-img">
+										<a href=""><img src="images/spring.jpg" alt="Java Spring" class="img-responsive"></a>
+										<div class="overlay-course">
+											<div class="overlay-detail">
+												<span class="course-avatar">
+													<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
+												</span>
+												<span>
+													69 Lectures<br/>
+													108 Hours
 												</span>
 											</div>
-											<div class="clearfix"></div>
-											<div class="course-proress">
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="70"
-													aria-valuemin="0" aria-valuemax="100" style="width:70%">70%</div>
-												</div>
+										</div>
+									</div>
+									<div class="course-info">
+										<a href=""><span class="course-title">Lập trình Web Java Spring</span></a>
+										<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+										<div class="course-review">
+											<span class="star-rate">
+												<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+												<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+												<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+												<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+												<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+												<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+												<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+												<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+												<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+												<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+											</span>
+										</div>
+										<div class="clearfix"></div>
+										<div class="course-proress">
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="70"
+												aria-valuemin="0" aria-valuemax="100" style="width:70%">70%</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
-									<div class="course-box">
-										<div class="course-img">
-											<a href=""><img src="images/ruby.jpg" alt="Ruby on Rails" class="img-responsive"></a>
-											<div class="overlay-course">
-												<div class="overlay-detail">
-													<span class="course-avatar">
-														<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
-													</span>
-													<span>
-														69 Lectures<br/>
-														108 Hours
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="course-info">
-											<a href=""><span class="course-title">Ruby on Rails 5</span></a>
-											<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
-											<div class="course-review">
-												<span class="star-rate">
-													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 course-box-container">
+								<div class="course-box">
+									<div class="course-img">
+										<a href=""><img src="images/ruby.jpg" alt="Ruby on Rails" class="img-responsive"></a>
+										<div class="overlay-course">
+											<div class="overlay-detail">
+												<span class="course-avatar">
+													<img src="images/avatar.jpg" alt="Avatar" class="img-responsive">
+												</span>
+												<span>
+													69 Lectures<br/>
+													108 Hours
 												</span>
 											</div>
-											<div class="clearfix"></div>
-											<div class="course-proress">
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="70"
-													aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
-												</div>
+										</div>
+									</div>
+									<div class="course-info">
+										<a href=""><span class="course-title">Ruby on Rails 5</span></a>
+										<a href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+										<div class="course-review">
+											<span class="star-rate">
+												<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+												<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+												<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+												<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+												<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+												<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+												<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+												<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+												<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+												<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+											</span>
+										</div>
+										<div class="clearfix"></div>
+										<div class="course-proress">
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="70"
+												aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
 											</div>
 										</div>
 									</div>

@@ -1,5 +1,23 @@
 $(document).ready(function() {
-	$('.menu-mobile').click(function() {
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.navbar-laptop').css('display', 'none');
+			$('.navbar-laptop').removeClass('animated fadeInDown');
+			$('.scrollToTop').css('display', 'block');
+		} else {
+			$('.navbar-laptop').css('display', 'block');
+			$('.navbar-laptop').addClass('animated fadeInDown');
+			$('.scrollToTop').css('display', 'none');
+		};
+	});
+
+	$('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},600);
+        return false;
+    });
+    
+	$('.menu-sidebar').click(function() {
 		$('.overflow-nav').toggleClass('nav-open');
 		$('.overlay-mobile').toggleClass('overlay-mobile-show');
 	});
@@ -16,7 +34,6 @@ $(document).ready(function() {
 	$('#course-curriculum h4.panel-title a').click(function() {
 		$(this).toggleClass('active');
 	});
-
 	$("#top-course").owlCarousel({
         navigation: true, // Show next and prev buttons
         slideSpeed: 300,
@@ -29,6 +46,7 @@ $(document).ready(function() {
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
+
 	$('#btn-rc').click(function() {
 		$(this).css('display', 'none');
 		$('.redeem-field').css('display', 'block');
@@ -77,150 +95,67 @@ $(document).ready(function() {
 		$('.btn-exit').addClass('hide-laptop');
 	});
 
-	// HTML, CSS Editor
-	function fetchHtml() {
-		var html = $('.html-input').val();
-		return html;
-	}
-	function fetchCss() {
-		var css = $('.css-input').val();
-		return css;
-	}
-	function fetchJs() {
-		var js = $('.js-input').val();
-		return js;
-	}
-	$('.innerbox').on("keyup", function() {
-		var target = $('#live_update')[0].contentWindow.document;
-		target.open();
-		target.close();
+	$('#input-cm').click(function() {
+		$('#input-cm').attr('rows', '3');
+		$('.discussion-btn').css('display', 'block');
+	});
+	$('.btn-later').click(function() {
+		$('.discussion-btn').css('display', 'none');
+		$('#input-cm').attr('rows', '1');
+	});
 
-		var html = fetchHtml();
-		var css = fetchCss();
-		var js = fetchJs();
-
-		$('body', target).append(html);
-		$('head', target).append('<style>' + css + '</style>');
-		$('head', target).append('<script>' + js + '</script>');
-	})
-
-	// Quiz
-	var question1 = {
-		question: "Một thẻ trong HTML được bao bọc bởi cặp ký tự nào?",
-		ans1: "< và >",
-		ans2: "( và )",
-		ans3: "? và !",
-		ans4: "! và !",
-		result: "ans1"
-	};
-
-	var question2 = {
-		question: "HTML là viết tắt của cụm từ nào?",
-		ans1: "Hyper Tool Markup Language",
-		ans2: "Holistic Technical Method Library",
-		ans3: "Home Tool Markup Language",
-		ans4: "Hyper Text Markup Language",
-		result: "ans4"
-	};
-
-	var question3 = {
-		question: "Ký tự nào luôn có mặt trong thẻ đóng của element?",
-		ans1: "+",
-		ans2: "-",
-		ans3: "*",
-		ans4: "/",
-		result: "ans4"
-	};
-
-	var question4 = {
-		question: "Thẻ nào tạo ra tiêu đề lớn nhất?",
-		ans1: "&lt;p&gt;",
-		ans2: "&lt;h1&gt;",
-		ans3: "&lt;h2&gt;",
-		ans4: "&lt;h3&gt;",
-		result: "ans2"
-	};
-
-	var question5 = {
-		question: "CSS là viết tắt của cụm từ nào?",
-		ans1: "Colorful Style Sheets",
-		ans2: "Computer Style Sheets",
-		ans3: "Creative Style Sheets",
-		ans4: "Cascading Style Sheets",
-		result: "ans4"
-	};
-
-	var arrQues = [question1, question2, question3, question4, question5];
-
-	var flag;
-	var score = 0;
-	var count = 1;
-	var numberClick = 0;
-	var max = 4;
-	var result;
-
-	$.resetChecked = function() {
-		$('.ans').each(function() {
-			$(this).attr('checked', false);
+	$('.add-note').click(function() {
+		$('.save-note').css('display', 'block');
+		$('.btn-save-note').click(function() {
+			if ($('#input-note').val() !== '') {
+				addNote($('#input-note').val());
+				$('.my-note').trigger('reset');
+				$('.save-note').css('display', 'none');
+			}
 		});
+	});
+	addNote("First note!");
+	addNote("Learning to code is hard, but coding is awesome.");
+	addNote("Next step will be adding a bit more functionalities while keeping the app simple. Keep in mind this is just an exercise.");
+	addNote("I expect nobody to see this, but if you have tips/suggestions please let me know.");
+	$('.btn-exit-note').click(function() {
+		$('.save-note').css('display', 'none');
+	});
+	function addNote(text) {
+		$('#note-list').append('\n<li class="list-group-item"><span>' + text + '</span><i class="fa fa-trash remove-note" aria-hidden="true"></i></li>');
 	}
+	$('.remove-note').click(function() {
+		$('.list-group-item').fadeOut('slow', function() {
+			$(this).remove();
+		});
+	});
 
-	$('.ans').click(function() {
-		$.resetChecked();
-		$(this).attr('checked', true);
-		$('.btn-check-quiz').removeAttr('disabled');
-		var flag = $(this).attr('id');
-		if(flag == arrQues[count-1].result) {
-			result = true;
-			score += 1;
+	var price = $('.btn-bn');
+	if (price.length) {
+		var priceOffset = price.offset().top;
+	}
+	$(window).scroll(function() {
+		var scrollPosition = $(window).scrollTop();
+		if (scrollPosition >= priceOffset) {
+			$('.fixed-price-box').removeClass('hide');
+			$('.fixed-price-box').addClass('animated fadeInUp');
 		} else {
-			result = false;
+			$('.fixed-price-box').addClass('hide');
 		}
 	});
 
-	$('.btn-check-quiz').click(function() {
-		$('.btn-check-quiz').addClass('hidden');
-		$('.btn-next-quiz').removeClass('hidden');
-		$('.ans').attr('disabled', true);
-		if(result == true) {
-			$('#modal-quiz .modal-footer').addClass('correct');
-			$('.result-correct').removeClass('hidden')
-		} else {
-			$('#modal-quiz .modal-footer').addClass('incorrect');
-			$('.result-incorrect').removeClass('hidden')
-		}
-		$('#modal-quiz .progress-bar').css('width', + score * 20 + "%");
-	});
+	// Navbar fixed Courses
 
-	$('.btn-next-quiz').click(function() {
-		$('.ans').removeAttr('disabled');
-		$('.btn-check-quiz').attr('disabled', true);
-		$('.btn-check-quiz').removeClass('hidden');
-		$('.btn-next-quiz').addClass('hidden');
-		$('#modal-quiz .modal-footer').removeClass('correct');
-		$('.result-correct').addClass('hidden')
-		$('#modal-quiz .modal-footer').removeClass('incorrect');
-		$('.result-incorrect').addClass('hidden');
-		$.resetChecked();
-		numberClick++;
-		if (numberClick <= max) {
-			$('#ques').html(arrQues[count].question);
-			$('label[for = "ans1"]').html(arrQues[count].ans1);
-			$('label[for = "ans2"]').html(arrQues[count].ans2);
-			$('label[for = "ans3"]').html(arrQues[count].ans3);
-			$('label[for = "ans4"]').html(arrQues[count].ans4);
-			if (count == max)
-				$('.btn-next-quiz').html("Kết quả");
-			count++;
+	var menu = $('.top-menu');
+	if (menu.length) {
+		var menuOffset = menu.offset().top;
+	}
+	$(window).scroll(function() {
+		var scrollPosition = $(window).scrollTop();
+		if (scrollPosition >= menuOffset) {
+			$('.top-menu').addClass('navbar-fixed-top top-menu-bg');
 		} else {
-			if(score == arrQues.length ) {
-				$('#modal-quiz .modal-body').html('<h1>Chúc mừng bạn</h1><p>Bạn đã vượt qua bài kiểm tra với số câu trả lời đúng là: ' + score + '/' + arrQues.length + '.');
-				$('.btn-check-quiz').addClass('hidden');
-			} else {
-				$('#modal-quiz .modal-body').html('<h1>Chia buồn cùng bạn</h1><p>Bạn đã vượt qua bài kiểm tra với số câu trả lời đúng là: ' + score + '/' + arrQues.length + '.');
-				$('.btn-check-quiz').addClass('hidden');
-			}	
+			$('.top-menu').removeClass('navbar-fixed-top top-menu-bg');
 		}
 	});
-
 });

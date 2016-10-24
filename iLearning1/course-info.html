@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web cơ bản với HTML5, CSS3 và Javascript | IVERSITY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header class="container-fluid nopadding">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-laptop" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo-left" href="#"><img src="images/logo.png" alt="Logo" class="img-responsive"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown multi-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Development</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Web Development</a></li>
+										<li><a href="#">Mobile App</a></li>
+										<li><a href="#">Game Development</a></li>
+										<li><a href="#">Database</a></li>
+										<li><a href="#">Programing Languages</a></li>
+										<li><a href="#">Software Testing</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">IT & Software</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">IT Certification</a></li>
+										<li><a href="#">Network & Security</a></li>
+										<li><a href="#">Hardware</a></li>
+										<li><a href="#">Database</a></li>
+										<li><a href="#">Operating Systems</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Web Design</a></li>
+										<li><a href="#">Graphic Design</a></li>
+										<li><a href="#">Interior Design</a></li>
+										<li><a href="#">Game Design</a></li>
+										<li><a href="#">3D & Animation</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Language</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">English</a></li>
+										<li><a href="#">Japanese</a></li>
+										<li><a href="#">Germany</a></li>
+										<li><a href="#">Chinese</a></li>
+										<li><a href="#">French</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Person Development</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Personal Finance</a></li>
+										<li><a href="#">Self Study</a></li>
+										<li><a href="#">Team Work</a></li>
+										<li><a href="#">Leadership</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown dropdown_notication"><a href="#">My Courses</a></li>
+						<li class="dropdown dropdown_notication">
+							<a href="#" class="dropdown-toggle dropdown-toggle-notication" data-toggle="dropdown"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+						</li>
+						<li class="dropdown dropdown_notication">
+							<a href="#" class="dropdown-toggle dropdown-toggle-notication" data-toggle="dropdown"><i class="fa fa-bell" aria-hidden="true"></i></a>
+						</li>
+						<li class="dropdown dropdown_avatar">
+							<a href="#" class="dropdown-toggle dropdown-toggle-avatar" data-toggle="dropdown"><img src="images/anonymous.png" alt="Avatar" class="avatar"></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-default navbar-fixed-top navbar-mobile" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<div class="menu-left">
+						<button type="button" class="navbar-toggle menu-mobile">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="logo-mobile text-center">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.png" alt="Logo" class="img-responsive logo-midle">
+						</a>
+					</div>
+					<div class="dropdown dropdown-shopping-cart">
+						<a href="#" class="dropdown-toggle dropdown-toggle-notication" data-toggle="dropdown"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<nav class="overflow-nav">
+					<div class="overflow-nav-main">
+						<div class="overflow-nav-profile text-center">
+							<a href=""><img src="images/anonymous.png" alt="" class="img-responsive overflow-nav-avatar"></a>
+							<p class="overflow-nav-user">Admin</p>
+						</div>
+						<ul class="overflow-nav-menu">
+							<li><a id="menu-courses" href="javascript:void(0)">
+								<span class="menu-title">Courses
+								</span>
+								<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							</a></li>
+							<li><a href=""><span class="menu-title">My Courses</span></a></li>
+							<li><a href=""><span class="menu-title">My Notications</span></a></li>
+							<li><a href=""><span class="menu-title">My Profile</span></a></li>
+							<li><a href=""><span class="menu-title">Help</span></a></li>
+							<li><a href=""><span class="menu-title">Logout</span></a></li>
+						</ul>
+					</div>
+					<div class="overflow-nav-sub">
+						<div class="overflow-nav-sub-header">
+							<button type="button" class="btn btn-default btn-backmenu"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button>
+							<span>Courses</span>
+						</div>
+						<ul>
+							<li><a href=""><span class="menu-title">Development</span></a></li>
+							<li><a href=""><span class="menu-title">IT & Software</span></a></li>
+							<li><a href=""><span class="menu-title">Design</span></a></li>
+							<li><a href=""><span class="menu-title">Language</span></a></li>
+							<li><a href=""><span class="menu-title">Person Development</span></a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="overlay-mobile">
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="container course-single">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 course-single-title">
+				<h2>Web cơ bản HTML5, CSS3 và Javascript</h2>
+				<p>Học HTML5, CSS3, Javascript, jQuery và framework Bootstrap để xây dựng responsive website.</p>
+				<div class="course-review">
+					<span class="star-rate">
+						<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+						<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+						<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+						<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+						<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+						<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+						<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+						<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+						<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</span>
+					<span class="course-rating">
+						5 <a href="">(1000)</a>
+					</span>
+				</div>
+				<div class="clearfix"></div>
+				<p class="couse-single-instructor">Giảng viên: <a href=""><span>Đặng Đức Huy</span></a>, <a href=""><span>Thân Văn Nghĩa</span></a></p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 course-single-img">
+				<img src="images/course-info.jpg" alt="Course" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-single-btn">
+				<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 course-single-price">
+					<ul>
+						<li><span class="course-price">2.000.000</span></li>
+						<li><span class="course-price course-price-original">2.500.000</span></li>
+						<li><span>Giảm 30%</span></li>
+					</ul>
+					<a href="course-detail.html" class="btn btn-default btn-trial">Học thử</a>
+					<a href="#" data-toggle="modal" data-target="#modal-bn" class="btn btn-primary btn-bn">Đăng ký ngay</a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 course-single-guarantee">
+					<span class="guarantee-left">Cam kết:</span>
+					<span class="guarantee-right">
+						<ul>
+							<li>Học online mọi lúc mọi nơi, trên mọi thiết bị. Học cả đời, mãi mãi</li>
+							<li>Hoàn tiền trong 3 ngày tính từ lúc mua nếu không hài lòng</li>
+							<li>Bài giảng sinh động, phong phú</li>
+							<li>Chứng chỉ hoàn thành khóa học</li>
+						</ul>
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid course-summary">
+		<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="summary-info">
+					<h3 class="text-center">74</h3>
+					<h4 class="text-center">Bài học</h4>
+					<p class="text-center text-muted">Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="summary-info">
+					<h3 class="text-center">30</h3>
+					<h4 class="text-center">Videos</h4>
+					<p class="text-center text-muted">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho bạn trong quá trình lập trình</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="summary-info">
+					<h3 class="text-center">93</h3>
+					<h4 class="text-center">Quizs</h4>
+					<p class="text-center text-muted">Câu hỏi trắc nghiệm giúp bạn ôn lại kiến thức vừa học</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="summary-info">
+					<h3 class="text-center">100</h3>
+					<h4 class="text-center">Challengers</h4>
+					<p class="text-center text-muted">Các bài tập giúp bạn ghi nhớ kiến thức vừa học</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid course-page">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 page-info">
+				<div role="tabpanel">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#course-about" aria-controls="home" role="tab" data-toggle="tab">Giới thiệu</a>
+						</li>
+						<li role="presentation">
+							<a href="#course-curriculum" aria-controls="tab" role="tab" data-toggle="tab">Giáo trình</a>
+						</li>
+						<li role="presentation">
+							<a href="#course-review" aria-controls="tab" role="tab" data-toggle="tab">Review</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="course-about">
+							<h4>Mô tả khóa học</h4>
+							<p><strong>Bạn đang tìm khóa học thiết kế và lập trình website? Đây chính là khóa học bạn đang tìm.</strong> Bạn cần phải học <strong>HTML5, CSS3, Javascript, JQuery</strong> để trở thành lập trình viên Web. Khóa học này sẽ dạy bạn các kỹ năng để trở thành một lập trình viên giỏi. Khóa học cũng dạy bạn <strong>Bootstrap Framework</strong> - Reponsive Framework phổ biến nhất.</p>
+							<p>Khóa học này cung cấp cho bạn các kiến thức cơ bản về <strong>HTML5, CSS3, Javascript, JQuery và Bootstrap Framework</strong>, bằng cách kết hợp các kiến thức này, bạn sẽ xây dựng các <strong>Responsive Website</strong></p>
+							<h4>Ưu điểm của khóa học</h4>
+							<ul>
+								<li>Dành cho người mới bắt đầu, chưa học lập trình hoặc cho những ai muốn ôn lại kiến thức căn bản về lập trình web.</li>
+								<li>Dễ học, dễ thực hành, ví dụ trực quan thú vị, không yêu cầu cao về máy móc hay phần mềm đi kèm.</li>
+								<li>Sử dụng HTML5, CSS3, thiết kế theo chuẩn SEO, responsive, tối ưu hóa cho các công cụ tìm kiếm.</li>
+								<li>Cần thiết cho tất cả dự án web trên mọi công nghệ, mọi nền tảng.</li>
+							</ul>
+							<h4>Kết thúc khóa học bạn sẽ học được gì?</h4>
+							<ul>
+								<li>HTML cơ bản, cấu trúc trang web theo chuẩn HTML5, tối ưu hóa cho SEO.</li>
+								<li>CSS cơ bản, kiến thức về responsive web design.</li>
+								<li>Javascript cơ bản, xử lý sự kiện, tương tác của người dùng.</li>
+							</ul>
+							<h4>Với những kiến thức đó bạn có thể làm gì?</h4>
+							<ul>
+								<li>Làm Front-end developer tại các công ty chuyên thiết kế website, gia công dự án website lớn.</li>
+								<li>Xin việc tại các công ty chuyên thiết kế theme cho website.</li>
+								<li>Làm freelance: fix bug HTML, CSS, Javascript, tối ưu hóa trang web sẵn có hoặc tự làm theme để bán.</li>
+								<li>Làm biên tập viên, viết bài, chỉnh sửa bài viết cho website của công ty, tổ chức, ...</li>
+								<li>Có nền tảng cơ bản để tiếp tục học chuyên sâu về lập trình web, lập trình di động hoặc lập trình game trên nền tảng HTML5.</li>
+							</ul>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="course-curriculum">
+							<div class="panel panel-default">
+								<div class="panel-group" id="lecture" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a role="button" data-toggle="collapse" data-parent="#lecture" href="#lecture-one" aria-expanded="true" aria-controls="lecture-one" class="active">
+													<div class="lecture-titile">
+														<span>1. Tổng quan về HTML (5 Lessons)</span>
+													</div>
+													<i class="view-lesson fa fa-chevron-left" aria-hidden="true"></i>
+												</a>
+											</h4>
+										</div>
+										<div id="lecture-one" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<table class="table table-hover">
+													<tbody>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">HTML là gì?</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>02:33</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Ứng dụng HTML đầu tiên</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>12:34</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Heading, Paragraph & Special characters</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>10:34</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Các thẻ format text</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>06:25</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-file-text" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">BT: Tạo 1 trang HTML đơn giản</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>Ex</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#lecture-two" aria-expanded="false" aria-controls="lecture-two">
+													<div class="lecture-titile">
+														<span>2. Tổng quan về CSS (6 Lessons)</span>
+													</div>
+													<i class="view-lesson fa fa-chevron-left" aria-hidden="true"></i>
+												</a>
+											</h4>
+										</div>
+										<div id="lecture-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+												<table class="table table-hover">
+													<tbody>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">CSS và cách sử dụng trên trang HTML</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>06:40</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">CSS syntax</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>07:27</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">CSS Selectors</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>08:39</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Styling text</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>08:33</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Hướng dẫn sử dụng Chrome Developer Tools</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>08:05</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-file-text" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">BT: Thực hành selectors</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>Ex</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#lecture-three" aria-expanded="false" aria-controls="lecture-three">
+													<div class="lecture-titile">
+														<span>3. Image & Link (7 Lessons)</span>
+													</div>
+													<i class="view-lesson fa fa-chevron-left" aria-hidden="true"></i>
+												</a>
+											</h4>
+										</div>
+										<div id="lecture-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+												<table class="table table-hover">
+													<tbody>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">CSS và cách sử dụng trên trang HTML</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>06:40</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">CSS syntax</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>07:27</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">CSS Selectors</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>08:39</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Styling text</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>08:33</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-play" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">Hướng dẫn sử dụng Chrome Developer Tools</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>08:05</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="lesson-icon">
+																<i class="fa fa-file-text" aria-hidden="true"></i>
+															</td>
+															<td class="lesson-info">
+																<a href=""><span class="lesson-title">BT: Thực hành selectors</span></a>
+															</td>
+															<td class="lesson-time">
+																<span>Ex</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="course-review">
+							<h4>Reviews</h4>
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<p>Tỉ số đánh giá trung bình</p>
+									<div class="average-rate">
+										<h1>4.6</h1>
+									</div>
+									<div class="course-review">
+										<span class="star-rate">
+											<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+											<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+											<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+											<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+											<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+											<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+											<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+											<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+											<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+											<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+										</span>
+										<span class="course-rating">
+											<a href="">(1000)</a>
+										</span>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 rate-list-overview">
+									<div class="rate-bar">
+										<table class="table table-hover">
+											<tbody>
+												<tr>
+													<td class="rate-title"><span>5 Sao</span></td>
+													<td class="rate-process">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" aria-valuenow="59"
+															aria-valuemin="0" aria-valuemax="100" style="width:59%">59%</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="rate-title"><span>4 Sao</span></td>
+													<td class="rate-process">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" aria-valuenow="24"
+															aria-valuemin="0" aria-valuemax="100" style="width:24%">24%</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="rate-title"><span>3 Sao</span></td>
+													<td class="rate-process">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" aria-valuenow="12"
+															aria-valuemin="0" aria-valuemax="100" style="width:12%">12%</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="rate-title"><span>2 Sao</span></td>
+													<td class="rate-process">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" aria-valuenow="5"
+															aria-valuemin="0" aria-valuemax="100" style="width:5%">5%</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="rate-title"><span>1 Sao</span></td>
+													<td class="rate-process">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" aria-valuenow="0"
+															aria-valuemin="0" aria-valuemax="100" style="width:0%">0%</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="review-comment-container">
+								<div class="review-comment">
+									<div class="row">
+										<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 avatar-user">
+											<img src="images/anonymous.png" alt="Avatar" class="img-responsive">
+										</div>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 user-detail">
+											<span>Nguyễn Hưng Thái</span>
+											<div class="course-review">
+												<span class="star-rate">
+													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+												</span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comment-container">
+											<p>Chương trinh khóa học bao quát, cho học viên cái nhìn tổng quan. Nội dung bài giảng chuyên sâu, có tính ứng dụng cao.</p>
+											<span class="day-post">09-10-2016</span>
+										</div>
+									</div>
+								</div>
+								<div class="review-comment">
+									<div class="row">
+										<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 avatar-user">
+											<img src="images/anonymous.png" alt="Avatar" class="img-responsive">
+										</div>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 user-detail">
+											<span>Nguyễn Hưng Thái</span>
+											<div class="course-review">
+												<span class="star-rate">
+													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+												</span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comment-container">
+											<p>Chương trinh khóa học bao quát, cho học viên cái nhìn tổng quan. Nội dung bài giảng chuyên sâu, có tính ứng dụng cao.</p>
+											<span class="day-post">09-10-2016</span>
+										</div>
+									</div>
+								</div>
+								<div class="review-comment">
+									<div class="row">
+										<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 avatar-user">
+											<img src="images/anonymous.png" alt="Avatar" class="img-responsive">
+										</div>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 user-detail">
+											<span>Nguyễn Hưng Thái</span>
+											<div class="course-review">
+												<span class="star-rate">
+													<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+													<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+													<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+													<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+													<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+													<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+													<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+													<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+													<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+													<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+												</span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comment-container">
+											<p>Chương trinh khóa học bao quát, cho học viên cái nhìn tổng quan. Nội dung bài giảng chuyên sâu, có tính ứng dụng cao.</p>
+											<span class="day-post">09-10-2016</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-textarea">
+								<div class="course-review">
+									<span class="star-rate">
+										<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+										<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+										<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+										<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+										<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+										<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+										<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+										<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+										<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+										<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+									</span>
+									<div class="clearfix"></div>
+								</div>
+								<div class="comment-write">
+									<textarea name="" id="comment-field" class="form-control" rows="1" required="required" placeholder="Suy nghĩ của bạn về khóa học này?"></textarea>
+									<i class="btn-send fa fa-paper-plane" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Gửi"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 related-course">
+				<h3 class="text-center">Các khóa học liên quan</h3>
+				<div class="related-course-box">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 related-course-img">
+							<a href=""><img src="images/ux.jpg" alt="UI UX" class="img-responsive"></a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 related-course-info">
+							<a href=""><span class="course-title">Thiết kế giao diện, trải nghiệm người dùng</span></a>
+							<a class="instructor" href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+							<div class="course-review">
+								<span class="star-rate">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</span>
+								<span class="course-rating">
+									5 <a href="">(1000)</a>
+								</span>
+							</div>
+							<div class="clearfix"></div>
+							<span class="course-price">
+								2,500,000
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="related-course-box">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 related-course-img">
+							<a href=""><img src="images/php.jpg" alt="PHP" class="img-responsive"></a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 related-course-info">
+							<a href=""><span class="course-title">Lập trình PHP 7 qua dự án thực tế</span></a>
+							<a class="instructor" href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+							<div class="course-review">
+								<span class="star-rate">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</span>
+								<span class="course-rating">
+									5 <a href="">(1000)</a>
+								</span>
+							</div>
+							<div class="clearfix"></div>
+							<span class="course-price">
+								2,500,000
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="related-course-box">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 related-course-img">
+							<a href=""><img src="images/magento.jpg" alt="Magento 2" class="img-responsive"></a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 related-course-info">
+							<a href=""><span class="course-title">Xây dựng website bán hàng với Magento 2</span></a>
+							<a class="instructor" href=""><span class="course-instructor">Đặng Quang Huy, Thân Văn Nghĩa</span></a>
+							<div class="course-review">
+								<span class="star-rate">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</span>
+								<span class="course-rating">
+									5 <a href="">(1000)</a>
+								</span>
+							</div>
+							<div class="clearfix"></div>
+							<span class="course-price">
+								2,500,000
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid footer">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+				<div class="footer-left-logo">
+					<img src="images/logo.png" alt="Logo" class="img-responsive center-block">
+				</div>
+				<div class="footer-left-social text-center">
+					<ul>
+						<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+						<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+						<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+						<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-left-app text-center">
+					<ul>
+						<li><a href=""><img src="images/google_btn.png" alt="Download on Google Play" title="Download on Google Play"></a></li>
+						<li><a href=""><img src="images/apple_btn.png" alt="Download on Apple Store" title="Download on Apple Store"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 footer-middle">
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 footer-middle-about">
+					<ul>
+						<li><a href="">Về chúng tôi</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Ebooks</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 footer-middle-contact">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="contac-img"><img src="images/map-pin.png" class="img-responsive"></td>
+								<td>
+									<span style="color: #ff0077;">Cơ sở 1</span>: <i>Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</i>
+									<br />
+									<span style="color: #ff0077;">Cơ sở 2</span>: <i>Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</i>
+								</td>
+							</tr>
+							<tr>
+								<td class="contac-img"><img src="images/phone-icon.png"></td>
+								<td>
+									<span style="color: #ff0077;">Mobile</span>: 0975 799 391
+									<br />
+									<span style="color: #ff0077;">Fax</span>: (04) 3 758 1155
+								</td>
+							</tr>
+							<tr>
+								<td class="contac-img"><img src="images/mail-icon2.png"></td>
+								<td><span>
+									<a href="mailto:iversity.vn@gmail.com">iversity.vn@gmail.com</a>
+								</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-right">
+				<h4 class="text-center text-uppercase">Đăng ký nhận tin</h4>
+				<p>Đăng ký nhận thông tin các khóa học từ iversity và nhận ngay voucher 500.000 VND</p>
+				<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Địa chỉ email của bạn">
+				<button type="button" class="btn btn-primary btn-subscribe">Đăng ký <i class="fa fa-graduation-cap" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="modal-bn">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Xác nhận đăng ký khóa học</h4>
+				</div>
+				<div class="modal-body">
+					<div class="original-price">
+						<div class="row">
+							<div class="col-xs-7 col-sm-9 col-md-9 col-lg-9 original-price-left">Website cơ bản HTML5, CSS3 và Javascript</div>
+							<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 original-price-right"><span class="course-price">2.500.000</span></div>
+						</div>
+					</div>
+					<div class="redeem-coupon">
+						<a id="btn-rc" href="">Sử dụng mã giảm giá</a>
+						<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 nopadding redeem-field">
+							<input type="text" name="" id="couponCode" class="form-control" value="" required="required" pattern="" title="" placeholder="Nhập mã giảm giá">
+						</div>
+						<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 btn-redeem">
+							<button type="button" class="btn btn-primary">Sử dụng</button>
+						</div>
+						<div class="col-xs-7 col-sm-9 col-md-9 col-lg-9 redeem-submitted-left">Coupon:</div>
+						<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 redeem-submitted-right"><span class="course-price">-500.000</span></div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="cost-total">
+						<div class="row">
+							<div class="col-xs-7 col-sm-9 col-md-9 col-lg-9 cost-total-left">Tổng</div>
+							<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 cost-total-right"><span class="course-price">2.500.000</span></div>
+						</div>
+					</div>
+
+					<div role="tabpanel">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#payment-cc" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-credit-card hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Credit Card</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#payment-pp" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-paypal hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Paypal</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#payment-ib" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-university hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Internet Banking</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#payment-mobilecard" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-money hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Thẻ cào</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#payment-office" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-home hide-laptop" aria-hidden="true"></i><span class="hide-mobile">iLearning</span></a>
+							</li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="payment-cc">
+								<div class="payment-cc-select">
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">Thêm thẻ tín dụng mới <img src="images/payment-cc.svg" alt="" class="img-responsive"></option>
+										<option value="">Không có thẻ nào</option>
+									</select>
+								</div>
+								<div class="payment-cc-name">
+									<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Tên chủ thẻ">
+								</div>
+								<div class="payment-cc-number">
+									<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Số thẻ">
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nopadding payment-cc-expire">
+									<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Hạn sử dụng thẻ">
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nopadding payment-cc-cvv">
+									<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="CVV">
+								</div>
+								<div class="clearfix"></div>
+								<div class="payment-cc-remember text-center">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Lưu thông tin thẻ
+										</label>
+									</div>
+								</div>
+								<div class="payment-cc-checkout">
+									<button type="button" class="btn btn-primary btn-checkout">Thanh toán</button>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="payment-pp">
+								<button type="button" class="btn btn-primary btn-checkout">Chuyển qua Paypal</button>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="payment-ib">
+								<div class="payment-ib-select">
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">Chọn ngân hàng bạn muốn sử dụng</option>
+										<option value="">Ngân hàng TMCP Ngoại thương Việt Nam - Vietcombank</option>
+										<option value="">Ngân hàng TMCP Công thương Việt Nam - Vietinbank</option>
+										<option value="">Ngân hàng Nông nghiệp và phát triển nông thôn - Agribank</option>
+										<option value="">Ngân hàng TMCP Kỹ thương Việt Nam – Techcombank</option>
+									</select>
+								</div>
+								<div class="payment-ib-content">
+									<p>Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng đúng mức học phí.</p>
+									<p>Tên Tài Khoản NH: <strong>Công ty TNHH Techmaster Việt Nam</strong></p>
+									<p>Số Tài Khoản NH: <strong>002 1000 252 385</strong> (TK Đồng Việt Nam)</p>
+									<p>Ngân hàng: <strong>Vietcombank, Chi nhánh Hà Nội</strong></p>
+									<p>Nội dung chuyển khoản bao gồm: <strong>tên khóa học, email và số điện thoại của bạn.</strong></p>
+								</div>
+								<div class="payment-ib-checkout">
+									<button type="button" class="btn btn-primary btn-checkout">Thanh toán</button>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="payment-mobilecard">
+								<div class="payment-mobilecard-select">
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">Chọn loại thẻ cào</option>
+										<option value="">Thẻ cào Viettel</option>
+										<option value="">Thẻ cào Mobifone</option>
+										<option value="">Thẻ cào Vinaphone</option>
+									</select>
+								</div>
+								<div class="payment-mobilecard-content">
+									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nopadding payment-mobilecard-value">
+										<select name="" id="mobileValue" class="form-control" required="required">
+											<option value="1">Mệnh giá</option>
+											<option value="500.000">500.000</option>
+											<option value="200.000">200.000</option>
+											<option value="100.000">100.000</option>
+											<option value="50.000">50.000</option>
+											<option value="20.000">20.000</option>
+											<option value="10.000">10.000</option>
+										</select>
+									</div>
+									<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 nopadding payment-mobilecard-number">
+										<input type="text" name="" id="cardNumber" class="form-control" value="" required="required" pattern="" title="" placeholder="Mã số thẻ cào">
+									</div>
+									<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 nopadding payment-mobilecard-seri">
+										<input type="text" name="" id="cardSeri" class="form-control" value="" required="required" pattern="" title="" placeholder="Mã Seri thẻ cào">
+									</div>
+									<p>Số tiền còn lại cần thanh toán: <span class="course-price">2.500.000</span></p>
+								</div>
+								<div class="payment-mobilecard-checkout">
+									<button type="button" class="btn btn-primary btn-checkout">Thanh toán</button>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="payment-office">
+								<p>Để đóng học phí trực tiếp, bạn vui lòng đến địa chỉ: <strong>Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà Nội, Việt Nam</strong></p>
+								<div class="payment-ib-checkout">
+									<button type="button" class="btn btn-primary btn-checkout">Thanh toán</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

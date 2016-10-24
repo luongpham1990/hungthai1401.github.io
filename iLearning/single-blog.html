@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.transitions.css">
@@ -17,155 +18,123 @@
 
 	<header class="container-fluid nopadding">
 		<nav class="navbar navbar-default navbar-fixed-top navbar-laptop" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+					<button type="button" class="navbar-toggle navbar-menu hide-mobile menu-sidebar">
+						<img src="images/menu-toggle.png" alt="" class="img-responsive hide-laptop">
 					</button>
-					<a class="navbar-brand logo-left" href="#"><img src="images/logo.png" alt="Logo" class="img-responsive"></a>
+					<a class="navbar-brand logo-left" href="#"><img src="images/code.png" alt="Logo" class="img-responsive"></a>
+					<button type="button" class="navbar-toggle navbar-search">
+						<img src="images/search.png" alt="" class="img-responsive hide-laptop">
+					</button>
+					<button type="button" class="navbar-toggle navbar-account" data-toggle="modal" data-target="#modal-form">
+						<img src="images/account.png" alt="" class="img-responsive hide-laptop">
+					</button>
 				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav navbar-cat">
 						<li class="dropdown multi-menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Các khóa học <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Development</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Web Development</a></li>
-										<li><a href="#">Mobile App</a></li>
-										<li><a href="#">Game Development</a></li>
-										<li><a href="#">Database</a></li>
-										<li><a href="#">Programing Languages</a></li>
-										<li><a href="#">Software Testing</a></li>
-									</ul>
+							<a href="courses.html" class="dropdown-toggle" data-toggle="dropdown">Các khóa học <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-cat">
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-basic">
+									<a href="courses.html"><span>CƠ BẢN
+									</span><i class="fa fa-code icon-menu-cat" aria-hidden="true"></i></a>
 								</li>
-								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">IT & Software</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">IT Certification</a></li>
-										<li><a href="#">Network & Security</a></li>
-										<li><a href="#">Hardware</a></li>
-										<li><a href="#">Database</a></li>
-										<li><a href="#">Operating Systems</a></li>
-									</ul>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-system">
+									<a href="courses.html"><span>HỆ THỐNG
+									</span><i class="fa fa-gg icon-menu-cat" aria-hidden="true"></i></a>
 								</li>
-								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Design</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Web Design</a></li>
-										<li><a href="#">Graphic Design</a></li>
-										<li><a href="#">Interior Design</a></li>
-										<li><a href="#">Game Design</a></li>
-										<li><a href="#">3D & Animation</a></li>
-									</ul>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-web">
+									<a href="courses.html"><span>LẬP TRÌNH WEB
+									</span><i class="fa fa-html5 icon-menu-cat" aria-hidden="true"></i></a>
 								</li>
-								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Language</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">English</a></li>
-										<li><a href="#">Japanese</a></li>
-										<li><a href="#">Germany</a></li>
-										<li><a href="#">Chinese</a></li>
-										<li><a href="#">French</a></li>
-									</ul>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-mobile">
+									<a href="courses.html"><span>LẬP TRÌNH MOBILE
+									</span><i class="fa fa-mobile icon-menu-cat" aria-hidden="true"></i></a>
 								</li>
-								<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Person Development</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Personal Finance</a></li>
-										<li><a href="#">Self Study</a></li>
-										<li><a href="#">Team Work</a></li>
-										<li><a href="#">Leadership</a></li>
-									</ul>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-game">
+									<a href="courses.html"><span>LẬP TRÌNH GAME
+									</span><i class="fa fa-gamepad icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-robot">
+									<a href="courses.html"><span>ROBOT - ĐIỆN TỬ
+									</span><i class="fa fa-android icon-menu-cat" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown dropdown_notication"><a href="#">Chúng tôi</a></li>
-						<li class="dropdown dropdown_notication">
-							<a href="#" class="dropdown-toggle dropdown-toggle-notication" data-toggle="dropdown">Blog</a>
+						<li class="dropdown dropdown_notication hide-mobile">
+							<a href="about.html">Chúng tôi</a>
 						</li>
-						<li class="dropdown dropdown_notication">
-							<a href="#" class="dropdown-toggle dropdown-toggle-notication" data-toggle="dropdown">Ebooks</a>
+						<li class="dropdown dropdown_notication hide-mobile">
+							<a href="blog.html">Blog</a>
 						</li>
-						<li class="dropdown dropdown_avatar">
-							<a href="#" class="dropdown-toggle dropdown-toggle-avatar" data-toggle="modal" data-target="#modal-form"><img src="images/anonymous.png" alt="Avatar" class="avatar"></a>
+						<li class="dropdown dropdown_notication hide-mobile">
+							<a href="#">Ebooks</a>
+						</li>
+						<li class="dropdown dropdown_avatar hide-mobile">
+							<a href="#" data-toggle="modal" data-target="#modal-form">Đăng ký / Đăng nhập</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
 		</nav>
 
-		<nav class="navbar navbar-default navbar-fixed-top navbar-mobile" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<div class="menu-left">
-						<button type="button" class="navbar-toggle menu-mobile">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="logo-mobile text-center">
-						<a class="navbar-brand" href="#">
-							<img src="images/logo.png" alt="Logo" class="img-responsive logo-midle">
-						</a>
-					</div>
-					<div class="dropdown dropdown-shopping-cart">
-						<a href="#" class="dropdown-toggle dropdown-toggle-notication" data-toggle="dropdown"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-					</div>
+		<nav class="overflow-nav">
+			<div class="overflow-nav-main">
+				<div class="overflow-nav-profile text-center">
+					<a href=""><img src="images/anonymous.png" alt="" class="img-responsive overflow-nav-avatar"></a>
+					<p class="overflow-nav-user">Bạn chưa đăng nhập</p>
 				</div>
-				<nav class="overflow-nav">
-					<div class="overflow-nav-main">
-						<div class="overflow-nav-profile text-center">
-							<a href=""><img src="images/anonymous.png" alt="" class="img-responsive overflow-nav-avatar"></a>
-							<p class="overflow-nav-user">Admin</p>
-						</div>
-						<ul class="overflow-nav-menu">
-							<li><a id="menu-courses" href="javascript:void(0)">
-								<span class="menu-title">Courses
-								</span>
-								<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-							</a></li>
-							<li><a href=""><span class="menu-title">My Courses</span></a></li>
-							<li><a href=""><span class="menu-title">My Notications</span></a></li>
-							<li><a href=""><span class="menu-title">My Profile</span></a></li>
-							<li><a href=""><span class="menu-title">Help</span></a></li>
-							<li><a href=""><span class="menu-title">Logout</span></a></li>
-						</ul>
-					</div>
-					<div class="overflow-nav-sub">
-						<div class="overflow-nav-sub-header">
-							<button type="button" class="btn btn-default btn-backmenu"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button>
-							<span>Courses</span>
-						</div>
-						<ul>
-							<li><a href=""><span class="menu-title">Development</span></a></li>
-							<li><a href=""><span class="menu-title">IT & Software</span></a></li>
-							<li><a href=""><span class="menu-title">Design</span></a></li>
-							<li><a href=""><span class="menu-title">Language</span></a></li>
-							<li><a href=""><span class="menu-title">Person Development</span></a></li>
-						</ul>
-					</div>
-				</nav>
-				<div class="overlay-mobile">
+				<ul class="overflow-nav-menu">
+					<li><a id="menu-courses" href="javascript:void(0)">
+						<span class="menu-title">Các khóa học
+						</span>
+						<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+					</a></li>
+					<li><a href="about.html"><span class="menu-title">Chúng tôi</span></a></li>
+					<li><a href="blog.html"><span class="menu-title">Blog</span></a></li>
+					<li><a href=""><span class="menu-title">Ebooks</span></a></li>
+					<li><a href=""><span class="menu-title">Đăng xuất</span></a></li>
+				</ul>
+			</div>
+			<div class="overflow-nav-sub">
+				<div class="overflow-nav-sub-header">
+					<button type="button" class="btn btn-default btn-backmenu"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button>
+					<span>Các khóa học</span>
 				</div>
+				<ul>
+					<li class="menu-basic">
+						<a href=""><span>CƠ BẢN</span><i class="fa fa-code icon-menu-cat"></i></a>
+					</li>
+					<li class="menu-system">
+						<a href=""><span>HỆ THỐNG</span><i class="fa fa-gg icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-web">
+						<a href=""><span>LẬP TRÌNH WEB</span><i class="fa fa-html5 icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-mobile">
+						<a href=""><span>LẬP TRÌNH MOBILE
+						</span><i class="fa fa-mobile icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-game">
+						<a href=""><span>LẬP TRÌNH GAME
+						</span><i class="fa fa-gamepad icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-robot">
+						<a href=""><span>ROBOT - ĐIỆN TỬ
+						</span><i class="fa fa-android icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+				</ul>
 			</div>
 		</nav>
+		<div class="overlay-mobile">
+		</div>
 
 		<div id="banner-blog">
-			<img src="images/blog-banner.jpg" alt="Banner" class="img-responsive">
 		</div>
 	</header>
 
@@ -370,7 +339,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
 				<div class="footer-left-logo">
-					<img src="images/logo.png" alt="Logo" class="img-responsive center-block">
+					<img src="images/code.png" alt="Logo" class="img-responsive center-block">
 				</div>
 				<div class="footer-left-social text-center">
 					<ul>
@@ -402,17 +371,17 @@
 							<tr>
 								<td class="contac-img"><img src="images/map-pin.png" class="img-responsive"></td>
 								<td>
-									<span style="color: #ff0077;">Cơ sở 1</span>: <i>Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</i>
+									<span style="color: #337ab7;">Cơ sở 1</span>: <i>Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</i>
 									<br />
-									<span style="color: #ff0077;">Cơ sở 2</span>: <i>Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</i>
+									<span style="color: #337ab7;">Cơ sở 2</span>: <i>Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</i>
 								</td>
 							</tr>
 							<tr>
 								<td class="contac-img"><img src="images/phone-icon.png"></td>
 								<td>
-									<span style="color: #ff0077;">Mobile</span>: 0975 799 391
+									<span style="color: #337ab7;">Mobile</span>: 0975 799 391
 									<br />
-									<span style="color: #ff0077;">Fax</span>: (04) 3 758 1155
+									<span style="color: #337ab7;">Fax</span>: (04) 3 758 1155
 								</td>
 							</tr>
 							<tr>
@@ -469,7 +438,7 @@
 									<div class="clearfix"></div>
 								</div>
 								<div class="form-submit text-center">
-									<button type="submit" class="btn btn-danger">Đăng ký</button>
+									<button type="submit" class="btn btn-danger">Đăng nhập</button>
 								</div>
 							</form>
 						</div>
@@ -492,7 +461,7 @@
 									<div class="clearfix"></div>
 								</div>
 								<div class="form-submit text-center">
-									<button type="submit" class="btn btn-danger">Đăng nhập</button>
+									<button type="submit" class="btn btn-danger">Đăng ký</button>
 								</div>
 							</form>
 						</div>
@@ -501,6 +470,8 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div>
+
+	<a href="#" class="btn btn-primary scrollToTop"><i class=" fa fa-2x fa-arrow-up"></i></a>
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

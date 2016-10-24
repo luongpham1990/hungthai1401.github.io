@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chúng tôi | IVERSITY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.transitions.css">
+	<link rel="stylesheet" type="text/css" href="css/build.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header class="container-fluid nopadding">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-laptop" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle navbar-menu hide-mobile menu-sidebar">
+						<img src="images/menu-toggle.png" alt="" class="img-responsive hide-laptop">
+					</button>
+					<a class="navbar-brand logo-left" href="#"><img src="images/code.png" alt="Logo" class="img-responsive"></a>
+					<button type="button" class="navbar-toggle navbar-search">
+						<img src="images/search.png" alt="" class="img-responsive hide-laptop">
+					</button>
+					<button type="button" class="navbar-toggle navbar-account" data-toggle="modal" data-target="#modal-form">
+						<img src="images/account.png" alt="" class="img-responsive hide-laptop">
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-cat">
+						<li class="dropdown multi-menu">
+							<a href="courses.html" class="dropdown-toggle" data-toggle="dropdown">Các khóa học <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-cat">
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-basic">
+									<a href="courses.html"><span>CƠ BẢN
+									</span><i class="fa fa-code icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-system">
+									<a href="courses.html"><span>HỆ THỐNG
+									</span><i class="fa fa-gg icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-web">
+									<a href="courses.html"><span>LẬP TRÌNH WEB
+									</span><i class="fa fa-html5 icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-mobile">
+									<a href="courses.html"><span>LẬP TRÌNH MOBILE
+									</span><i class="fa fa-mobile icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-game">
+									<a href="courses.html"><span>LẬP TRÌNH GAME
+									</span><i class="fa fa-gamepad icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+								<li class="col-sm-4 col-md-4 col-lg-4 dropdown-submenu menu-robot">
+									<a href="courses.html"><span>ROBOT - ĐIỆN TỬ
+									</span><i class="fa fa-android icon-menu-cat" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown dropdown_notication hide-mobile">
+							<a href="about.html">Chúng tôi</a>
+						</li>
+						<li class="dropdown dropdown_notication hide-mobile">
+							<a href="blog.html">Blog</a>
+						</li>
+						<li class="dropdown dropdown_notication hide-mobile">
+							<a href="#">Ebooks</a>
+						</li>
+						<li class="dropdown dropdown_avatar hide-mobile">
+							<a href="#" data-toggle="modal" data-target="#modal-form">Đăng ký / Đăng nhập</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+		<nav class="overflow-nav">
+			<div class="overflow-nav-main">
+				<div class="overflow-nav-profile text-center">
+					<a href=""><img src="images/anonymous.png" alt="" class="img-responsive overflow-nav-avatar"></a>
+					<p class="overflow-nav-user">Bạn chưa đăng nhập</p>
+				</div>
+				<ul class="overflow-nav-menu">
+					<li><a id="menu-courses" href="javascript:void(0)">
+						<span class="menu-title">Các khóa học
+						</span>
+						<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+					</a></li>
+					<li><a href="about.html"><span class="menu-title">Chúng tôi</span></a></li>
+					<li><a href="blog.html"><span class="menu-title">Blog</span></a></li>
+					<li><a href=""><span class="menu-title">Ebooks</span></a></li>
+					<li><a href=""><span class="menu-title">Đăng xuất</span></a></li>
+				</ul>
+			</div>
+			<div class="overflow-nav-sub">
+				<div class="overflow-nav-sub-header">
+					<button type="button" class="btn btn-default btn-backmenu"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button>
+					<span>Các khóa học</span>
+				</div>
+				<ul>
+					<li class="menu-basic">
+						<a href=""><span>CƠ BẢN</span><i class="fa fa-code icon-menu-cat"></i></a>
+					</li>
+					<li class="menu-system">
+						<a href=""><span>HỆ THỐNG</span><i class="fa fa-gg icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-web">
+						<a href=""><span>LẬP TRÌNH WEB</span><i class="fa fa-html5 icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-mobile">
+						<a href=""><span>LẬP TRÌNH MOBILE
+						</span><i class="fa fa-mobile icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-game">
+						<a href=""><span>LẬP TRÌNH GAME
+						</span><i class="fa fa-gamepad icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-robot">
+						<a href=""><span>ROBOT - ĐIỆN TỬ
+						</span><i class="fa fa-android icon-menu-cat" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="overlay-mobile">
+		</div>
+
+		<div id="banner-about">
+		</div>
+	</header>
+
+	<section class="container about-container">
+		<h3 class="text-center">Giới thiệu</h3>
+		<div class="about-content">
+			<p>Trung tâm đào tạo tin học IVERSITY được thành lập vào năm 2014, với niềm đam mê Công Nghệ Thông Tin và kinh nghiệm 10 năm giảng dạy với mong muốn sẽ đào tạo ra các nhân lực chất lượng cao nhằm mang đến quý học viên những khóa học chất lượng nhất, dễ tiếp thu và hiện đại nhất, phù hợp với sự phát triển Công Nghê Thông Tin theo xu hướng toàn cầu.</p>
+			<p>Tuy chỉ mới hoạt động được 2 năm, nhưng IVERSITY hiện đã có gần 20 giảng viên trực thuộc, và đã đào tạo hơn 1000 học viên. Hơn thế nữa, tất cả đều đã có được việc làm ổn định bằng chính những kiến thức đã học tại Trung Tâm.</p>
+			<p>Cũng nhờ vào sự ủng hộ của tất cả mọi người, đặc biệt là những giảng viên đang công tác tại IVERSITY, chúng tôi đã & đang xây dựng một Trung Tâm có những đặc điểm khác biệt nhất trên thị trường. Chỉ duy nhất tại IVERSITY, chúng tôi tự hào với những ưu điểm sau:</p>
+			<ul>
+				<li>Trang web học trực tuyến đằng cấp cực chất với</li>
+				<li>Nội dung học luôn luôn mới nhất và được cập nhật liên tục ngay cả quá trình học. IVERSITY luôn đi đầu công nghệ ứng dụng và đào tạo: Bạn muốn học công nghệ mới, hãy tìm nó tại IVERSITY.</li>
+				<li>Chất lượng giảng dạy luôn đặt lên hàng đầu.</li>
+				<li>Chi phí đào tạo luôn luôn thấp nhất</li>
+				<li>Hỗ trợ học viên trong suốt quá trình học, và ngay cả sau khi đã hoàn tất khóa học. Sự hài lòng của học viên sau khi hoàn tất khóa học là ưu tiên hàng đầu của IVERSITY.</li>
+				<li>Tài liệu học trực quan, đầy đủ, cập nhật liên tục: Luôn luôn có video clip 100% do chính các giảng viên tại IVERSITY xây dựng, giúp học viên có thể tự học lại tốt nhất.</li>
+				<li>100% giảng viên tại IVERSITY đều đã từng là những người “thợ” với nhiều năm va chạm thực tế: Chúng tôi chỉ dạy những kiến thức thực tế, học là phải làm được.</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="container-fluid nopadding my-team">
+		<h3 class="text-center">Đội ngũ giảng viên</h3>
+		<ul class="my-team-container">
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3 nopadding team-box">
+				<div class="team-img">
+					<img src="images/user1.jpg" alt="" class="img-responsive">
+					<h5>Nguyễn Hưng Thái</h5>
+					<div class="team-info-overlay">
+						<div class="team-info text-center">
+							<p>Nguyễn Hưng Thái</p>
+							<p>Giảng viên khóa học "Web cơ bản với HTML5, CSS3 và Javascript"</p>
+							<ul class="team-social">
+								<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+								<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+								<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<div class="clearfix"></div>
+		</ul>
+	</section>
+
+	<footer class="container-fluid footer">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+				<div class="footer-left-logo">
+					<img src="images/code.png" alt="Logo" class="img-responsive center-block">
+				</div>
+				<div class="footer-left-social text-center">
+					<ul>
+						<li><a href=""><img src="images/facebook.png" alt="Facebook" title="Facebook"></a></li>
+						<li><a href=""><img src="images/instagram.png" alt="" class="img-responsive"></a></li>
+						<li><a href=""><img src="images/twitter.png" alt="" class="img-responsive"></a></li>
+						<li><a href=""><img src="images/youtube.png" alt="" class="img-responsive"></a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-left-app text-center">
+					<ul>
+						<li><a href=""><img src="images/google_btn.png" alt="Download on Google Play" title="Download on Google Play"></a></li>
+						<li><a href=""><img src="images/apple_btn.png" alt="Download on Apple Store" title="Download on Apple Store"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 footer-middle">
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 footer-middle-about">
+					<ul>
+						<li><a href="">Về chúng tôi</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Ebooks</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 footer-middle-contact">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="contac-img"><img src="images/map-pin.png" class="img-responsive"></td>
+								<td>
+									<span style="color: #337ab7;">Cơ sở 1</span>: <i>Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</i>
+									<br />
+									<span style="color: #337ab7;">Cơ sở 2</span>: <i>Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</i>
+								</td>
+							</tr>
+							<tr>
+								<td class="contac-img"><img src="images/phone-icon.png"></td>
+								<td>
+									<span style="color: #337ab7;">Mobile</span>: 0975 799 391
+									<br />
+									<span style="color: #337ab7;">Fax</span>: (04) 3 758 1155
+								</td>
+							</tr>
+							<tr>
+								<td class="contac-img"><img src="images/mail-icon2.png"></td>
+								<td><span>
+									<a href="mailto:iversity.vn@gmail.com">iversity.vn@gmail.com</a>
+								</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-right">
+				<h4 class="text-center text-uppercase">Đăng ký nhận tin</h4>
+				<p>Đăng ký nhận thông tin các khóa học từ iversity và nhận ngay voucher 500.000 VND</p>
+				<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Địa chỉ email của bạn">
+				<button type="button" class="btn btn-primary btn-subscribe">Đăng ký <i class="fa fa-graduation-cap" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div role="tabpanel">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#login-form" aria-controls="home" role="tab" data-toggle="tab">ĐĂNG NHẬP</a>
+							</li>
+							<li role="presentation">
+								<a href="#register-form" aria-controls="tab" role="tab" data-toggle="tab">ĐĂNG KÝ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="login-form">
+							<form class="form-login">
+								<input type="email" name="" id="email" class="form-control" value="" required="required" title="" placeholder="Email">
+								<input type="password" name="" id="password" class="form-control" required="required" title="" placeholder="Mật khẩu">
+								<div class="form-text">
+									<ul>
+										<div class="checkbox checkbox-danger">
+											<input type="checkbox" value="" id="remember">
+											<label for="remember">Ghi nhớ?</label>
+										</div>
+										<li>
+											<a href="#">Quên mật khẩu</a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="form-submit text-center">
+									<button type="submit" class="btn btn-danger">Đăng nhập</button>
+								</div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="register-form">
+							<form class="form-register">
+								<input type="text" name="" id="fullname" class="form-control" value="" required="required" title="" placeholder="Họ tên">
+								<input type="email" name="" id="email" class="form-control" value="" required="required" title="" placeholder="Email">
+								<input type="password" name="" id="password" class="form-control" required="required" title="" placeholder="Mật khẩu">
+								<input type="password" name="" id="confirmpass" class="form-control" required="required" title="" placeholder="Nhập lại mật khẩu">
+								<input type="text" name="" id="mobile" class="form-control" value="" required="required" title="" placeholder="Số điện thoại">
+								<div class="form-text">
+									<ul>
+										<li>
+											<div class="checkbox checkbox-danger">
+												<input type="checkbox" value="" id="accept">
+												<label for="accept">Tôi đã đọc và đồng ý với điều khoản sử dụng của iversity</label>
+											</div>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="form-submit text-center">
+									<button type="submit" class="btn btn-danger">Đăng ký</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
+
+	<a href="#" class="btn btn-primary scrollToTop"><i class=" fa fa-2x fa-arrow-up"></i></a>
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

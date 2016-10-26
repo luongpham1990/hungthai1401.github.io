@@ -13,10 +13,10 @@ $(document).ready(function() {
 	});
 
 	$('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},600);
-        return false;
-    });
-    
+		$('html, body').animate({scrollTop : 0},600);
+		return false;
+	});
+	
 	$('.menu-sidebar').click(function() {
 		$('.overflow-nav').toggleClass('nav-open');
 		$('.overlay-mobile').toggleClass('overlay-mobile-show');
@@ -43,6 +43,73 @@ $(document).ready(function() {
         autoPlay: true,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
+
+	$('.modal-toggle').click(function (e) {
+		var tab = e.target.hash;
+		$('li > a[href="' + tab + '"]').tab("show");
+	});
+
+	var emailReg = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
+	var passReg = /^([a-zA-Z0-9@*#]{6,12})$/;
+	var mobileReg = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+	$('.form-register').on('submit', function() {
+
+		var isValid = true;
+
+		if ($('#fullname-register').val().trim() == '') {
+			$('.fullname').find('p').text('Bạn chưa nhập Họ tên!');
+			isValid = false;
+		} else {
+			$('.fullname').find('p').text('');
+			isValid = true;
+		}
+		if ($('#email-register').val().trim() == '') {
+			$('.email').find('p').text('Bạn chưa nhập Email!');
+			isValid = false;
+		} else {
+			if ($('#email-register').val().match(emailReg)) {
+				$('.email').find('p').text('');
+			} else {
+				$('.email').find('p').text('Email không hợp lệ!');
+				isValid = false;
+			}
+		}
+		if ($('#password-register').val().trim() == '') {
+			$('.password').find('p').text('Bạn chưa nhập Mật khẩu!');
+			isValid = false;
+		} else {
+			if ($('#password-register').val().match(passReg)) {
+				$('.password').find('p').text('');
+			} else {
+				$('.password').find('p').text('Mật khẩu không hợp lệ!');
+				isValid = false;
+			}
+		}
+		if ($('#confirmpass-register').val().trim() == '') {
+			$('.confirmpass').find('p').text('Bạn chưa nhập Mật khẩu xác nhận!');
+			isValid = false;
+		} else {
+			if ($('#confirmpass-register').val() === $('#password-register').val()) {
+				$('.confirmpass').find('p').text('');
+			} else {
+				$('.confirmpass').find('p').text('Mật khẩu xác nhận không trùng Mật khẩu!');
+				isValid = false;
+			}
+		}
+		if ($('#mobile-register').val().trim() == '') {
+			$('.mobile').find('p').text('Bạn chưa nhập số điện thoại!');
+			isValid = false;
+		} else {
+			if ($('#mobile-register').val().match(mobileReg)) {
+				$('.mobile').find('p').text('');
+			} else {
+				$('.mobile').find('p').text('Số điện thoại không hợp lệ!');
+				isValid = false;
+			}
+		}
+		return isValid;
+	});
+
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
@@ -104,6 +171,12 @@ $(document).ready(function() {
 		$('#input-cm').attr('rows', '1');
 	});
 
+	var listId = 0;
+	var date = new Date();
+	var dateString = null;
+	month = date.getMonth() + 1;
+	dateString = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " + date.getDate() + "/" + month + "/" + date.getFullYear();
+
 	$('.add-note').click(function() {
 		$('.save-note').css('display', 'block');
 		$('.btn-save-note').click(function() {
@@ -113,21 +186,31 @@ $(document).ready(function() {
 				$('.save-note').css('display', 'none');
 			}
 		});
+		listId++;
 	});
-	addNote("First note!");
-	addNote("Learning to code is hard, but coding is awesome.");
-	addNote("Next step will be adding a bit more functionalities while keeping the app simple. Keep in mind this is just an exercise.");
-	addNote("I expect nobody to see this, but if you have tips/suggestions please let me know.");
+	addNote("Hyper Text Markup Language");
+	addNote("Cascading Style Sheets");
+	addNote("Javascript");
+	addNote("Jquery");
 	$('.btn-exit-note').click(function() {
 		$('.save-note').css('display', 'none');
 	});
 	function addNote(text) {
-		$('#note-list').append('\n<li class="list-group-item"><span>' + text + '</span><i class="fa fa-trash remove-note" aria-hidden="true"></i></li>');
+		$('#note-list').append('\n<li data-id="' + listId + '" class="list-group-item"><div class="note-content"><span>' + text + '</span></div><div class="note-date"><span>' + dateString +'</span></div><i class="fa fa-trash remove-note" aria-hidden="true"></i></li>');
 	}
-	$('.remove-note').click(function() {
-		$('.list-group-item').fadeOut('slow', function() {
-			$(this).remove();
+	$('#note-list').on('click', 'li', function() {
+		var idList = $(this).data('id');
+		$('#note-list li.selected').removeClass('selected');
+		$(this).addClass('selected');
+		$('.remove-note').click(function() {
+			var id = $('#note-list li.selected').data('id');
+			if(idList == id) {
+				$('#note-list li.selected').fadeOut('slow', function() {
+					$(this).remove();
+				});
+			}
 		});
+		$('#edit-note').val(contentNote);
 	});
 
 	var price = $('.btn-bn');
@@ -158,4 +241,5 @@ $(document).ready(function() {
 			$('.top-menu').removeClass('navbar-fixed-top top-menu-bg');
 		}
 	});
+
 });

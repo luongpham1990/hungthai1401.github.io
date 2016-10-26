@@ -23,7 +23,7 @@
 					<button type="button" class="navbar-toggle navbar-menu hide-mobile menu-sidebar">
 						<img src="images/menu-toggle.png" alt="" class="img-responsive hide-laptop">
 					</button>
-					<a class="navbar-brand logo-left" href="#"><img src="images/code.png" alt="Logo" class="img-responsive"></a>
+					<a class="navbar-brand logo-left" href="index.html"><img src="images/code.png" alt="Logo" class="img-responsive"></a>
 					<button type="button" class="navbar-toggle navbar-search">
 						<img src="images/search.png" alt="" class="img-responsive hide-laptop">
 					</button>
@@ -76,7 +76,10 @@
 							<a href="#">Ebooks</a>
 						</li>
 						<li class="dropdown dropdown_avatar hide-mobile">
-							<a href="#" data-toggle="modal" data-target="#modal-form">Đăng ký / Đăng nhập</a>
+							<a href="#login-form" class="modal-toggle" data-toggle="modal" data-target="#modal-form">Đăng nhập</a>
+						</li>
+						<li class="dropdown dropdown_avatar hide-mobile">
+							<a href="#register-form" class="modal-toggle" data-toggle="modal" data-target="#modal-form">Đăng ký</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -480,7 +483,7 @@
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 feedback">
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 feedback-user-avatar">
-							<img src="images/user1.png" alt="" class="img-responsive">
+							<img src="images/user1.jpg" alt="" class="img-responsive">
 							<span>Nguyễn Hưng Thái</span>
 						</div>
 						<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 feedback-user-content">
@@ -491,7 +494,7 @@
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 feedback">
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 feedback-user-avatar">
-							<img src="images/user2.png" alt="" class="img-responsive">
+							<img src="images/user2.jpg" alt="" class="img-responsive">
 							<span>Nguyễn Hưng Thái</span>
 						</div>
 						<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 feedback-user-content">
@@ -611,12 +614,27 @@
 							</form>
 						</div>
 						<div role="tabpanel" class="tab-pane" id="register-form">
-							<form class="form-register">
-								<input type="text" name="" id="fullname" class="form-control" value="" required="required" title="" placeholder="Họ tên">
-								<input type="email" name="" id="email" class="form-control" value="" required="required" title="" placeholder="Email">
-								<input type="password" name="" id="password" class="form-control" required="required" title="" placeholder="Mật khẩu">
-								<input type="password" name="" id="confirmpass" class="form-control" required="required" title="" placeholder="Nhập lại mật khẩu">
-								<input type="text" name="" id="mobile" class="form-control" value="" required="required" title="" placeholder="Số điện thoại">
+							<form class="form-register" action="profile.html">
+								<div class="fullname">
+									<input type="text" name="" id="fullname-register" class="form-control" title="" placeholder="Họ tên">
+									<p id="error"></p>
+								</div>
+								<div class="email">
+									<input type="text" name="email" id="email-register" class="form-control" title="" placeholder="Email">
+									<p id="error"></p>
+								</div>
+								<div class="password">
+									<input type="password" name="" id="password-register" class="form-control" title="" placeholder="Mật khẩu">
+									<p id="error"></p>
+								</div>
+								<div class="confirmpass">
+									<input type="password" name="" id="confirmpass-register" class="form-control" title="" placeholder="Nhập lại mật khẩu">
+									<p id="error"></p>
+								</div>
+								<div class="mobile">
+									<input type="text" name="" id="mobile-register" class="form-control" value="" title="" placeholder="Số điện thoại">
+									<p id="error"></p>
+								</div>
 								<div class="form-text">
 									<ul>
 										<li>
@@ -629,7 +647,7 @@
 									<div class="clearfix"></div>
 								</div>
 								<div class="form-submit text-center">
-									<button type="submit" class="btn btn-danger">Đăng ký</button>
+									<input type="submit" class="btn btn-danger btn-submit" value="Đăng ký">
 								</div>
 							</form>
 						</div>

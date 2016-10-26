@@ -3,12 +3,17 @@ $(document).ready(function() {
 	var htmlInput = CodeMirror.fromTextArea(document.getElementById('input-html'), {
 		mode: "text/html",
 		theme: "zenburn",
+		profile: 'xhtml',
 		lineNumbers: true,
 		lineWrapping: true,
 		extraKeys: {"Ctrl-Space": "autocomplete"},
 		autoCloseBrackets: true,
 		autoCloseTags: true,
 		autoRefresh: true
+	});
+	emmetCodeMirror(htmlInput, {
+		'Tab': 'emmet.expand_abbreviation_with_tab',
+		'Cmd-Alt-B': 'emmet.balance_outward'
 	});
 	var cssInput = CodeMirror.fromTextArea(document.getElementById('input-css'), {
 		mode: "css",

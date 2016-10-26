@@ -56,12 +56,12 @@ $(document).ready(function() {
 
 	$.resetChecked = function() {
 		$('.ans').each(function() {
-			$(this).attr('checked', false);
+			$(this).prop('checked', false);
 		});
 	}
 	$('.ans').click(function() {
 		$.resetChecked();
-		$(this).attr('checked', true);
+		$(this).prop('checked', true);
 		$('.btn-check-quiz').removeAttr('disabled');
 		flag = $(this).attr('id');
 	});
@@ -76,7 +76,6 @@ $(document).ready(function() {
 	}
 	$('.btn-check-quiz').click(function() {
 		score = $.correctAns(flag);
-		$.resetChecked();
 		$('.btn-check-quiz').addClass('hidden');
 		$('.btn-next-quiz').removeClass('hidden');
 		$('.ans').attr('disabled', true);
@@ -111,10 +110,10 @@ $(document).ready(function() {
 			count++;
 		} else {
 			if(score == arrQues.length ) {
-				$('#modal-quiz .modal-body').html('<h1>Chúc mừng bạn</h1><p>Bạn đã vượt qua bài kiểm tra với số câu trả lời đúng là: ' + score + '/' + arrQues.length + '.');
+				$('#modal-quiz .modal-body').html('<h2>Chúc mừng bạn</h2><p>Bạn đã vượt qua bài kiểm tra với số câu trả lời đúng là: ' + score + '/' + arrQues.length + '.');
 				$('.btn-check-quiz').addClass('hidden');
 			} else {
-				$('#modal-quiz .modal-body').html('<h1>Chia buồn cùng bạn</h1><p>Bạn đã vượt qua bài kiểm tra với số câu trả lời đúng là: ' + score + '/' + arrQues.length + '.');
+				$('#modal-quiz .modal-body').html('<h2>Chia buồn cùng bạn</h2><p>Bạn đã vượt qua bài kiểm tra với số câu trả lời đúng là: ' + score + '/' + arrQues.length + '.');
 				$('.btn-check-quiz').addClass('hidden');
 			}	
 		}

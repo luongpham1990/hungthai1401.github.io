@@ -309,6 +309,10 @@ h5 {
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #fff;
 }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
 .navbar-cat .dropdown-menu-cat {
 	width: 100%;
 	padding: 5px 0;
@@ -389,7 +393,7 @@ li.menu-robot {
 /*<!---------- /Header ----------!>*/
 /*<!---------- Index ----------!>*/
 .content-one {
-	margin-top: 10px;
+	padding: 50px 15px;
 }
 .about-us-index h3 {
 	text-align: center;
@@ -434,8 +438,8 @@ li.menu-robot {
 	color: #fff;
 }
 .content-three {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 70px;
 }
 .content-three h3 {
 	margin-bottom: 20px;
@@ -542,7 +546,8 @@ li.menu-robot {
     line-height: 31px;
 }
 .blog-tag a:hover {
-	color: #ff0077;
+	background-color: #337ab7;
+	color: #fff;
 }
 .blog-right-box {
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -640,7 +645,7 @@ li.menu-robot {
 	margin-bottom: 20px;
 } 
 /*<!---------- /Single Blog ----------!>*/
-/*<!---------- /Single Blog ----------!>*/
+/*<!---------- About ----------!>*/
 .about-container {
 	margin-top: 40px;
 }
@@ -672,7 +677,7 @@ ul.my-team-container li.team-box {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #25273b;
+	background-color: rgba(35, 31, 44, 0.7);
 	opacity: 0;
 	overflow: hidden;
 	visibility: hidden;
@@ -718,7 +723,7 @@ ul.my-team-container li.team-box {
 	opacity: 1;
 	visibility: visible;
 }
-/*<!---------- /Single Blog ----------!>*/
+/*<!---------- /About ----------!>*/
 /*<!---------- Footer ----------!>*/
 .footer {
 	background-color: #25273b;
@@ -832,8 +837,13 @@ ul.my-team-container li.team-box {
 }
 .course-img .overlay-course .overlay-detail{
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 .course-img .overlay-course .overlay-detail a{
 	position: relative;
@@ -861,8 +871,8 @@ ul.my-team-container li.team-box {
 	transition: all 0.6s ease;  
 }
 .course-avatar img {
-	width: 50px;
-	height: 50px;
+	width: 100%;
+	height: 80px;
 }
 .course-img:hover .overlay-course{
 	opacity: 1;
@@ -936,6 +946,9 @@ span.course-price::after {
 }
 /*<!---------- /Courses  ----------!>*/
 /*<!---------- Course Info  ----------!>*/
+.course-single {
+	padding: 40px 15px;
+}
 .couse-single-instructor a {
 	color: #337ab7;
 }
@@ -956,7 +969,7 @@ span.course-price::after {
 }
 .btn-trial, .btn-bn {
 	display: block;
-	padding: 11px 12px;
+	padding: 20px 15px;
 	vertical-align: middle;
 	cursor: pointer;
 	margin-bottom: 15px;
@@ -981,19 +994,32 @@ span.guarantee-right ul li {
 	font-size: 15px;
 }
 .course-summary {
-	border-bottom: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid #ccc;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .page-info {
 	background-color: #f4f4f4;
 	padding-bottom: 50px;
 }
-.page-info .nav li.active a {
+.page-info .nav {
+	background-color: #25273b;
+}
+.page-info .nav li a {
+	color: #fff;
+}
+.page-info .nav li.active a, .page-info .nav li:hover a, .page-info .nav li:focus a {
 	background-color: #337ab7;
 	color: #fff;
 	border: 1px solid #337ab7;
+	border-bottom: none;
 }
 .page-info .nav li a {
 	padding: 10px 5px;
+}
+.page-info .tab-content {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .page-info #course-about ul {
 	padding-left: 35px;
@@ -1140,9 +1166,11 @@ i.btn-send {
 	padding: 10px 10px;
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
+	margin-top: 30px;
 }
 .related-course-img img {
 	margin-bottom: 10px;
+	width: 100%;
 }
 .related-course-info .instructor {
 	display: block;
@@ -1294,7 +1322,13 @@ i.btn-send {
 	text-align: center;
 }
 .course-menu-right .tab-content #lectures_list .panel-body ul li {
-	padding-bottom: 10px;
+	padding: 10px 5px;
+}
+.course-menu-right .tab-content #lectures_list .panel-body ul li.active {
+	background-color: #337ab7;
+}
+.course-menu-right .tab-content #lectures_list .panel-body ul li.active span {
+	color: #fff;
 }
 .course-menu-right .tab-content #lectures_list .panel-body ul li:last-child {
 	padding-bottom: 0;
@@ -1353,15 +1387,19 @@ i.btn-send {
 	position: relative;
 	padding: 5px 15px;
 }
-#note-container ul li:hover {
+#note-container ul li:hover, #note-container ul li.selected {
 	background-color: #f1f1f1;
 }
 #note-container ul li span {
 	display: inline-block;
 	width: 95%;
 }
-#note-container ul li .note-content, #note-container ul li .note-date {
-	width: 95%;
+#note-container ul li .note-content {
+	font-weight: bold;
+}
+#note-container ul li .note-date {
+	font-size: 14px;
+	color: #aaaaaa;
 }
 #note-container ul li i.remove-note {
 	float: right;
@@ -1422,6 +1460,9 @@ i.btn-send {
 	padding-top: 30px;
 	padding-bottom: 10px;
 }
+.CodeMirror-hints {
+	z-index: 1000000;
+}
 /*<!---------- /Course Detail  ----------!>*/
 /*<!---------- Modal Quiz  ----------!>*/
 #modal-quiz .modal-content {
@@ -1454,9 +1495,6 @@ i.btn-send {
 }
 #modal-code .modal-open .modal {
 	padding-left: 0 !important;
-}
-.modal-open {
-	padding-right: 0 !important;
 }
 /*<!---------- /Modal Challenge  ----------!>*/
 /*<!---------- My Profile  ----------!>*/
@@ -1564,6 +1602,9 @@ input#new-password {
 	border: none;
 	padding: 0;
 }
+.navbar-dashboard .logo-left img {
+	margin: 0 auto;
+}
 .my-course-container {
 	padding: 10px;
 }
@@ -1584,9 +1625,6 @@ input#new-password {
 /*<!---------- /My Profile  ----------!>*/
 /*<!---------- /Modal Change Email, Password  ----------!>*/
 /*<!---------- Modal Form  ----------!>*/
-.modal-open {
-	padding-right: 0 !important;
-}
 #modal-form {
 	padding-right: 0 !important;
 }
@@ -1609,13 +1647,14 @@ input#new-password {
 	text-align: center;
 }
 #modal-form .modal-content ul li.active a {
-	color: #d24747;
+	color: #d9534f;
 	border: none;
 }
 .form-login input[type="email"], .form-login input[type="password"], .form-register input[type="text"], .form-register input[type="password"], .form-register input[type="email"] {
 	outline: none;
 	color: #fff;
 	border: none;
+	box-shadow: none;
 	border-bottom: 1px dashed #ccc;
 	background-color: transparent;
 	padding: 10px;
@@ -1645,6 +1684,10 @@ input#new-password {
 .form-submit button {
 	padding: 10px 30px;
 	text-transform: uppercase;
+}
+#error {
+	color: #ff0000;
+	font-weight: bold;
 }
 /*<!---------- /Modal Form  ----------!>*/
 
@@ -1680,15 +1723,12 @@ input#new-password {
 		height: 400px;
 	}
 	.navbar-laptop ul.dropdown-menu {
-		width: 700px !important;
+		width: 600px !important;
 	}
 	.logo-left {
-		width: 150px;
+		width: 100px;
 		padding: 0;
 		padding-top: 5px;
-	}
-	.logo-left img {
-		margin: 0 auto;
 	}
 	.hide-laptop {
 		display: none;
@@ -1777,7 +1817,7 @@ input#new-password {
 		height: 441px;
 	}
 	.navbar-laptop ul.dropdown-menu {
-		width: 1050px !important;
+		width: 850px !important;
 	}
 	.navbar-laptop {
 		display: block;
@@ -1792,12 +1832,9 @@ input#new-password {
 		background-color: transparent !important;
 	}
 	.logo-left {
-		width: 150px;
+		width: 100px;
 		padding: 0;
 		padding-top: 5px;
-	}
-	.logo-left img {
-		margin: 0 auto;
 	}
 	.navbar-right a.dropdown-toggle-notication {
 		display: block;
@@ -1812,9 +1849,6 @@ input#new-password {
 	}
 	.welcome {
 		padding-top: 150px;
-	}
-	.btn-trial, .btn-bn {
-		width: 70%;
 	}
 	.course-single-guarantee {
 		border-top: 1px solid #000;

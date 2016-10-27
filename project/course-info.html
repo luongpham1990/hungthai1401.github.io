@@ -8,9 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.transitions.css">
 	<link rel="stylesheet" type="text/css" href="css/build.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -923,31 +920,25 @@
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active">
-								<a href="#payment-cc" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-credit-card hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Credit Card</span></a>
+								<a href="#payment-cc" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-credit-card hide-laptop" aria-hidden="true"></i><span class="hide-mobile show-sm">Credit Card</span></a>
 							</li>
 							<li role="presentation">
-								<a href="#payment-pp" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-paypal hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Paypal</span></a>
+								<a href="#payment-pp" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-paypal hide-laptop" aria-hidden="true"></i><span class="hide-mobile show-sm">Paypal</span></a>
 							</li>
 							<li role="presentation">
-								<a href="#payment-ib" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-university hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Internet Banking</span></a>
+								<a href="#payment-ib" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-university hide-laptop" aria-hidden="true"></i><span class="hide-mobile show-sm">Internet Banking</span></a>
 							</li>
 							<li role="presentation">
-								<a href="#payment-mobilecard" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-money hide-laptop" aria-hidden="true"></i><span class="hide-mobile">Thẻ cào</span></a>
+								<a href="#payment-mobilecard" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-money hide-laptop" aria-hidden="true"></i><span class="hide-mobile show-sm">Thẻ cào</span></a>
 							</li>
 							<li role="presentation">
-								<a href="#payment-office" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-home hide-laptop" aria-hidden="true"></i><span class="hide-mobile">iLearning</span></a>
+								<a href="#payment-office" aria-controls="tab" role="tab" data-toggle="tab"><i class="fa fa-home hide-laptop" aria-hidden="true"></i><span class="hide-mobile show-sm">iLearning</span></a>
 							</li>
 						</ul>
 
 						<!-- Tab panes -->
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="payment-cc">
-								<!-- <div class="payment-cc-select">
-									<select name="" id="input" class="form-control" required="required">
-										<option value="">Thêm thẻ tín dụng mới <img src="images/payment-cc.svg" alt="" class="img-responsive"></option>
-										<option value="">Không có thẻ nào</option>
-									</select>
-								</div> -->
 								<div class="payment-cc-name">
 									<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Tên chủ thẻ">
 								</div>
@@ -961,14 +952,6 @@
 									<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="CVV">
 								</div>
 								<div class="clearfix"></div>
-								<!-- <div class="payment-cc-remember text-center">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											Lưu thông tin thẻ
-										</label>
-									</div>
-								</div> -->
 								<div class="payment-cc-checkout">
 									<button type="button" class="btn btn-primary btn-checkout">Thanh toán</button>
 								</div>
@@ -1007,7 +990,7 @@
 									</select>
 								</div>
 								<div class="payment-mobilecard-content">
-									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nopadding payment-mobilecard-value">
+									<!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nopadding payment-mobilecard-value">
 										<select name="" id="mobileValue" class="form-control" required="required">
 											<option value="1">Mệnh giá</option>
 											<option value="500.000">500.000</option>
@@ -1017,11 +1000,11 @@
 											<option value="20.000">20.000</option>
 											<option value="10.000">10.000</option>
 										</select>
-									</div>
-									<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 nopadding payment-mobilecard-number">
+									</div> -->
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nopadding payment-mobilecard-number">
 										<input type="text" name="" id="cardNumber" class="form-control" value="" required="required" pattern="" title="" placeholder="Mã số thẻ cào">
 									</div>
-									<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 nopadding payment-mobilecard-seri">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nopadding payment-mobilecard-seri">
 										<input type="text" name="" id="cardSeri" class="form-control" value="" required="required" pattern="" title="" placeholder="Mã Seri thẻ cào">
 									</div>
 									<p>Số tiền còn lại cần thanh toán: <span class="course-price">2.500.000</span></p>
@@ -1150,7 +1133,7 @@
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/courseInfo.js"></script>
 </body>
 </html>

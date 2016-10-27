@@ -262,4 +262,58 @@ $(document).ready(function() {
 		var html = html1 + html2 + html3;
 		$('#lectures_list #accordion').append(html);
 	}
+
+	// Comments
+	$('#input-cm').click(function() {
+		$('#input-cm').attr('rows', '3');
+		$('.discussion-btn').css('display', 'block');
+	});
+	$('.btn-later').click(function() {
+		$('.discussion-btn').css('display', 'none');
+		$('#input-cm').attr('rows', '1');
+	});
+
+
+	// Note
+	var listId = 0;
+	var date = new Date();
+	var dateString = null;
+	month = date.getMonth() + 1;
+	dateString = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " + date.getDate() + "/" + month + "/" + date.getFullYear();
+
+	$('.add-note').click(function() {
+		$('.save-note').css('display', 'block');
+		$('.btn-save-note').click(function() {
+			if ($('#input-note').val() !== '') {
+				addNote($('#input-note').val());
+				$('.my-note').trigger('reset');
+				$('.save-note').css('display', 'none');
+			}
+		});
+		listId++;
+	});
+	addNote("Hyper Text Markup Language");
+	addNote("Cascading Style Sheets");
+	addNote("Javascript");
+	addNote("Jquery");
+	$('.btn-exit-note').click(function() {
+		$('.save-note').css('display', 'none');
+	});
+	function addNote(text) {
+		$('#note-list').append('\n<li data-id="' + listId + '" class="list-group-item"><div class="note-content"><span>' + text + '</span></div><div class="note-date"><span>' + dateString +'</span></div><i class="fa fa-trash remove-note" aria-hidden="true"></i></li>');
+	}
+	$('#note-list').on('click', 'li', function() {
+		var idList = $(this).data('id');
+		$('#note-list li.selected').removeClass('selected');
+		$(this).addClass('selected');
+		$('.remove-note').click(function() {
+			var id = $('#note-list li.selected').data('id');
+			if(idList == id) {
+				$('#note-list li.selected').fadeOut('slow', function() {
+					$(this).remove();
+				});
+			}
+		});
+		$('#edit-note').val(contentNote);
+	});
 });

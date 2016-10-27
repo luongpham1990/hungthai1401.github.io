@@ -415,7 +415,10 @@ li.menu-robot {
 	border: none;
 	box-shadow: none;
 }
-.content-two h3, .content-three h3 {
+.course-img img {
+	width: 100%;
+}
+.content-two h2, .content-three h2 {
 	text-align: center;
 }
 #top-course {
@@ -451,7 +454,7 @@ li.menu-robot {
 	background-size: cover;
 	color: #fff;
 }
-.content-four h3 {
+.content-four h2 {
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -502,6 +505,23 @@ li.menu-robot {
     margin-bottom: 30px;
 	background: url(../images/border_bottom.png) no-repeat left bottom;
 	margin-top: 50px;
+}
+.blog-search {
+	position: relative;
+}
+.blog-search i {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.blog-search i:hover, .blog-search i:focus {
+	color: #337ab7;
 }
 .blog-category {
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -778,6 +798,9 @@ ul.my-team-container li.team-box {
 .top-courses {
 	margin-top: 30px;
 }
+.top-menu {
+	transition: all 0.4s ease;
+}
 .top-menu button {
 	margin-bottom: 10px;
 }
@@ -872,7 +895,7 @@ ul.my-team-container li.team-box {
 }
 .course-avatar img {
 	width: 100%;
-	height: 80px;
+	height: 60px;
 }
 .course-img:hover .overlay-course{
 	opacity: 1;
@@ -1221,14 +1244,32 @@ i.btn-send {
 .btn-checkout {
 	width: 100%;
 }
-/*.hide-mobile {
+.hide-mobile {
 	display: none;
-}*/
+}
 .payment-cc-name, .payment-cc-number, .payment-cc-expire, .payment-cc-cvv, .payment-cc-checkout {
 	padding-top: 15px;
 }
 .payment-ib-select, .payment-ib-select, .payment-mobilecard-number, .payment-mobilecard-seri {
 	padding-bottom: 15px;
+}
+.payment-cc-expire input, .payment-mobilecard-number input {
+	width: 95%;
+}
+.payment-cc-cvv input, .payment-mobilecard-seri input {
+	width: 95%;
+	float: right;
+}
+#payment-cc input[type="text"], #payment-mobilecard input[type="text"] {
+	outline: none;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px dashed #ccc;
+	background-color: transparent;
+	padding: 10px;
+	margin-bottom: 10px;
+	-webkit-appearance: none;
 }
 .payment-mobilecard-select select {
 	margin-bottom: 15px;
@@ -1247,15 +1288,6 @@ i.btn-send {
 }
 /*<!---------- /Course Info  ----------!>*/
 /*<!---------- Course Detail  ----------!>*/
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: rgba(30,31,42,0.9);
-	width: 100%;
-	height: 100%;
-	z-index: 10000;
-}
 .challenge-container {
 	position: relative;
 	height: 100%;
@@ -1277,7 +1309,8 @@ i.btn-send {
 	position: relative;
 }
 .course-detail-left .top-control {
-	padding: 10px 0 10px 0;
+	padding: 10px 0 20px 0;
+
 }
 .course-detail-left .top-control a {
 	color: #fff;
@@ -1453,10 +1486,10 @@ i.btn-send {
 	border-radius: 10px;
 }
 .preview iframe {
-	background-image: url(../images/browser.jpg);
+	background-image: url(../images/browser.png);
 	background-size: cover;
 	width: 100%;
-	height: 150px;
+	height: 200px;
 	padding-top: 30px;
 	padding-bottom: 10px;
 }
@@ -1901,7 +1934,6 @@ input#new-password {
 		padding-right: 100px;
 	}
 	.my-profile-info {
-		border: 1px solid #ccc;
 		background-color: #fff;
 		padding: 15px;
 		height: 890px;
@@ -1925,7 +1957,7 @@ input#new-password {
 		height: 350px;
 	}
 	.preview iframe {
-		padding-top: 60px;
+		padding-top: 80px;
 		height: 490px;
 	}
 	.top-control button {
